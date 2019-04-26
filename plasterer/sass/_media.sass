@@ -1,0 +1,271 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.logo
+		margin-right: 30px
+	.main_menu
+		& ul:last-child
+			margin-right: 30px
+		li
+			margin-right: 25px
+			a
+				font-size: 20px
+
+	.header-text
+		margin-top: 150px
+		li
+			font-size: 28px
+
+	.cont_title_text
+		font-size: 32px
+
+	.cont_pictures 
+		li
+			letter-spacing: none
+			width: 133px
+			font-size: 16px
+
+	.cont_list 
+		li
+			font-size: 26px
+
+	.cont_paragraphes
+		font-size: 17px
+
+	.owl-nav 
+		div
+			top: 100px
+
+	.site_footer 
+		li
+			margin-right: 106px
+			font-size: 22px
+	
+
+// ≥992px
++media-breakpoint-down(md)
+	.call_back
+		display: none
+
+	.logo
+		margin-right: 30px
+		img
+			width: 190px
+			margin-top: -4px
+	.main_menu
+		li
+			margin-right: 20px
+			a
+				font-size: 20px
+
+	.header-text
+		margin-top: 140px
+		li
+			font-size: 26px
+
+	.cont_title_text
+		font-size: 28px
+
+	.cont_pictures 
+		li
+			width: 214px
+			margin-bottom: 20px
+
+	.owl-nav 
+		div
+			top: 110px
+
+	.site_footer 
+		li
+			margin-right: 44px
+			font-size: 20px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.hamburger, #my-menu
+		display: block
+
+	.site-header
+		background-image: url('../img/bg-1_phone.jpg') !important
+
+	.cont_background
+		background-image: url('../img/bg_main_phone.jpg') !important
+
+	.site_footer
+		background-image: url('../img/bg_footer_phone.jpg') !important
+
+	// .mm-menu_opened
+	// 	.mm-listview
+	// 		display: block
+	
+	.top-line
+		height: 42px
+
+	.main_menu
+		display: none
+
+	.logo
+		img
+			width: 280px
+
+	.top-line
+		text-align: center
+
+	.header-text
+		margin-top: 150px
+		li
+			font-size: 22px
+
+	.cont_pictures 
+		li
+			width: 244px
+
+	.cont_title_text
+		font-size: 28px
+
+	.cont_paragraphes
+		p
+			margin-left: -80px
+			margin-right: -80px
+
+	.cont_list 
+		li
+			font-size: 24px
+			margin-bottom: 22px
+			margin-left: -60px
+
+	.owl-nav 
+		div
+			top: 180px
+
+	.site_footer
+		background-size: cover
+		ul
+			text-align: center
+		li
+			margin-right: 0
+			width: 240px
+
+// ≥684px
+@media only screen and (max-width : 684px)
+	.cont_paragraphes
+		p
+			margin-left: -20px
+			margin-right: -20px
+
+	.cont_list 
+		li
+			margin-left: -20px
+
+// ≥576px
++media-breakpoint-down(xs)
+	.logo
+		img
+			width: 200px
+			margin-left: 40px
+			margin-top: 4px
+
+	.header-text
+		li
+			font-size: 18px
+	
+	.cont_title_text
+		font-size: 20px
+
+	.cont_pictures
+		li
+			margin-right: 0
+			margin-bottom: 24px
+
+	.cont_title_text
+		text-align: center
+
+	.cont_paragraphes
+		p
+			margin-left: 0
+			margin-right: 0
+
+	.cont_list 
+		li
+			font-size: 16px
+			margin-bottom: 22px
+			margin-left: 0
+
+	.cont_background
+		background-size: cover
+
+	.owl-nav 
+		div
+			top: 180px
+		div.owl-next
+			right: 5px
+		div.owl-prev
+			left: 5px
+
+// ≥520px
+@media only screen and (max-width : 520px)
+	.site_footer 
+		li
+			width: 230px
+
+// ≥500px
+@media only screen and (max-width : 500px)
+	.owl-nav 
+		div
+			top: 150px
+
+	.cont_pictures 
+		li
+			width: 210px
+
+	.site_footer 
+		li
+			width: 190px
+		
+// ≥430px
+@media only screen and (max-width : 430px)
+	.owl-nav 
+		div
+			top: 130px
+
+	.cont_pictures 
+		li
+			width: 180px
+
+	.site_footer 
+		li
+			width: 170px
+
+// ≥380px
+@media only screen and (max-width : 380px)
+	.owl-nav 
+		div
+			top: 110px
+
+	.cont_pictures 
+		li
+			width: 140px
+
+	.site_footer 
+		li
+			width: 140px
+			font-size: 16px
+	
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
