@@ -1,0 +1,304 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	margin: 0
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	overflow-x: hidden
+
+ul, li, h1, h2, h3, h4, h5, h6, p
+	margin: 0
+	padding: 0
+
+.container_flex
+	max-width: 1440px
+	width: 100%
+	padding: 0 20px
+	margin-right: auto
+	margin-left: auto
+	text-align: center
+	
+header
+	text-align: center
+	background-size: cover
+	background-position: center
+	padding-bottom: 1px
+
+.header_top_bcg
+	position: absolute
+	background-position: center
+	background-size: cover
+	width: 100%
+	height: 143px
+
+.header_left_block
+	display: inline-block
+	height: 143px
+	margin-right: 24px
+	img
+		width: 166px
+		height: 114px
+	a
+		margin-top: 20px
+		display: inline-block
+	.header_info
+		margin-left: 10px
+		margin-right: 30px
+		display: inline-block
+		vertical-align: bottom
+		text-align: left
+		h1, h2
+			font-family: RobotoRegular, sans-serif
+			font-style: normal
+			font-weight: normal
+			letter-spacing: 0.04em
+			margin-bottom: 8px
+		h1
+			font-size: 31px
+			line-height: 36px
+			color: #0C0C0C
+		h2
+			font-size: 22px
+			line-height: 26px
+			color: #000
+
+.header_right_block
+	display: inline-block
+	vertical-align: top
+	margin-top: 32px
+	left: 62%
+
+.btn_entry, 
+.btn_registration
+	display: inline-block
+	height: 36px
+	background: #0EA70A
+	box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25)
+	border-radius: 8px
+	text-align: center
+	span
+		font-family: RobotoRegular, sans-serif
+		font-style: normal
+		font-weight: normal
+		font-size: 18px
+		line-height: 36px
+		letter-spacing: -0.01em
+		color: #FFFCFC
+
+.btn_entry
+	width: 123px
+
+.btn_registration
+	width: 164px
+
+.header_call_logo_phones
+	img
+		display: inline-block
+		margin-top: 20px
+
+.header_phones
+	display: inline-block
+	vertical-align: top
+	margin-top: 22px
+	margin-left: 10px
+	a
+		font-family: RobotoRegular, sans-serif
+		font-style: normal
+		font-weight: normal
+		font-size: 20px
+		line-height: 23px
+		letter-spacing: 0.03em
+		color: #000
+
+.header_menu
+	display: inline-block
+	margin-top: 570px
+	margin-bottom: 35px
+	width: 1144px
+	height: 62px
+	background: rgba(30, 67, 165, 0.47)
+	border-radius: 16px
+	ul
+		list-style-type: none
+		display: flex;
+		justify-content: space-around
+		li
+			display: inline-flex
+			font-family: RobotoRegular, sans-serif
+			font-style: normal
+			font-weight: normal
+			font-size: 24px
+			line-height: 62px
+			text-decoration-line: underline
+			text-transform: uppercase
+			color: #FFFAFA
+
+.content_items
+	height: 1381px
+	text-align: center
+	background-position: center
+	background-size: cover
+
+.content_icons
+	margin-top: 26px
+	margin-bottom: 30px
+	padding: 0 10px
+	width: 1130px
+	display: inline-flex
+	justify-content: space-between
+	align-items: baseline
+	div
+		display: inline-block
+		max-width: 170px
+		font-family: RobotoRegular, sans-serif
+		font-style: normal
+		font-weight: normal
+		font-size: 20px
+		line-height: 23px
+		text-align: center
+		color: #000
+	& div:nth-child(1), img:nth-child(2)
+		height: 83px
+		width: 140px
+	& div:nth-child(3)
+		height: 89px
+	& div:nth-child(4), img:nth-child(5)
+		height: 100px
+	& div:nth-child(6)
+		height: 75px
+	span
+		display: block
+	.icon_desc
+		display: flex
+		align-items: center
+		text-align: center
+		margin-top: 10px
+		min-height: 70px
+
+.content_items_wrap
+	width: 1130px
+	display: inline-block
+	text-align: left
+	.ellipse_bcg
+		position: absolute
+		top: 56px
+		left: 38px
+		width: 224px
+		height: 246px
+		border-bottom-left-radius: 100% 100%
+		border-bottom-right-radius: 100% 100%
+		border-top-left-radius: 100% 100%
+		border-top-right-radius: 100% 100%
+		background: linear-gradient(314.15deg, #FFFFFF 1.57%, #FFFFFF 3.19%, rgba(252, 99, 236, 0.65) 5.22%, rgba(255, 255, 255, 0) 79.42%), rgba(31, 73, 220, 0.67)
+	.content_item
+		position: relative
+		overflow: hidden
+		text-align: center
+		vertical-align: top
+		display: inline-block
+		margin-right: 20px
+		margin-bottom: 20px
+		width: 200px
+		height: 250px
+		box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.25)
+		background: rgba(198, 220, 247, 0.59)
+		border: 1px solid #000000
+		box-sizing: border-box
+		border-radius: 22px
+	span
+		display: block
+		font-family: RobotoRegular, sans-serif
+		font-style: normal
+		font-weight: bold
+		font-size: 20px
+		line-height: 28px
+		text-decoration-line: underline
+		color: #19547E
+		text-transform: uppercase
+		margin-bottom: 15px
+		margin-top: 4px
+	
+.content_items_wrap .content_item img
+	position: absolute
+	z-index: 1
+	left: 0
+	top: 40px
+
+.content_items_wrap > a:nth-child(19) > div:nth-child(1) > img:nth-child(2)
+	top: 52px
+
+.content_items_wrap > a:nth-child(8) > div:nth-child(1) > span:nth-child(1)
+	line-height: 22px
+	position: absolute
+	z-index: 2
+
+.content_items_wrap > a:nth-child(10) > div:nth-child(1) > span:nth-child(1)
+	font-size: 18px
+
+footer
+	text-align: center
+
+.footer_content_wrap
+	height: 308px
+	background: #3777A5
+	
+.footer_bottom
+	height: 84px
+	background: #272727
+
+.footer_content
+	text-align: left
+	display: inline-block
+	width: 1130px
+
+.footer_left_block
+	display: inline-block
+	width: 280px
+	text-align: center
+	margin-right: 30px
+	img
+		width: 280px
+		height: 194px
+	.footer_phones 
+		margin-top: 6px
+		span
+			display: block
+	.footer_mail
+		margin-top: 14px
+	.footer_mail,
+	.footer_phones span, a
+		font-family: RobotoRegular, sans-serif
+		font-style: normal
+		font-weight: normal
+		font-size: 18px
+		line-height: 21px
+		color: #F9F9F9
+
+.footer_middle_block
+	display: inline-flex
+	flex-direction: column
+	text-align: center
+	justify-content: space-around
+	height: 308px
+	vertical-align: top
+	width: 360px
+	font-family: RobotoRegular, sans-serif
+	font-style: normal
+	font-weight: normal
+	font-size: 26px
+	line-height: 30px
+	color: #FDF8F8
+	margin-right: 20px
+
+.footer_right_block
+	display: inline-block
+	vertical-align: top
+	margin-top: 16px
+
+
+
+@import "media" // Always at the end
