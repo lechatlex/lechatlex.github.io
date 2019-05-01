@@ -27,6 +27,13 @@ header
 	background-size: cover
 	background-position: center
 	padding-bottom: 1px
+	height: 100vh
+
+.top_line
+	position: absolute
+	margin: auto
+	left: 0
+	right: 0
 
 .header_top_bcg
 	position: absolute
@@ -77,6 +84,7 @@ header
 	display: inline-block
 	height: 36px
 	background: #0EA70A
+	box-sizing: border-box
 	box-shadow: -5px 5px 4px rgba(0, 0, 0, 0.25)
 	border-radius: 8px
 	text-align: center
@@ -116,15 +124,18 @@ header
 
 .header_menu
 	display: inline-block
-	margin-top: 570px
-	margin-bottom: 35px
+	position: absolute
+	left: 0
+	right: 0
+	margin: auto
+	top: 88vh
 	width: 1144px
 	height: 62px
 	background: rgba(30, 67, 165, 0.47)
 	border-radius: 16px
 	ul
 		list-style-type: none
-		display: flex;
+		display: flex
 		justify-content: space-around
 		li
 			display: inline-flex
@@ -138,7 +149,7 @@ header
 			color: #FFFAFA
 
 .content_items
-	height: 1381px
+	padding-bottom: 54px
 	text-align: center
 	background-position: center
 	background-size: cover
@@ -183,6 +194,8 @@ header
 	width: 1130px
 	display: inline-block
 	text-align: left
+	a
+		text-decoration: none
 	.ellipse_bcg
 		position: absolute
 		top: 56px
@@ -202,8 +215,8 @@ header
 		display: inline-block
 		margin-right: 20px
 		margin-bottom: 20px
-		width: 200px
-		height: 250px
+		width: 206px
+		height: 252px
 		box-shadow: -6px 6px 4px rgba(0, 0, 0, 0.25)
 		background: rgba(198, 220, 247, 0.59)
 		border: 1px solid #000000
@@ -221,6 +234,11 @@ header
 		text-transform: uppercase
 		margin-bottom: 15px
 		margin-top: 4px
+
+.content_items_wrap > a:nth-child(5) > div:nth-child(1),
+.content_items_wrap > a:nth-child(10) > div:nth-child(1),
+.content_items_wrap > a:nth-child(15) > div:nth-child(1)
+	margin-right: 0
 	
 .content_items_wrap .content_item img
 	position: absolute
@@ -243,7 +261,6 @@ footer
 	text-align: center
 
 .footer_content_wrap
-	height: 308px
 	background: #3777A5
 	
 .footer_bottom
@@ -298,7 +315,7 @@ footer
 	display: inline-block
 	vertical-align: top
 	margin-top: 16px
-
-
+	.map_medium_screen, .map_small_screen
+		display: none
 
 @import "media" // Always at the end
