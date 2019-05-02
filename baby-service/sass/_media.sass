@@ -1,18 +1,20 @@
 @import "vars"
 
 @media only screen and (max-width : 1160px)
+	.header_menu,
+	.content_icons,
+	.footer_content,
+	.content_items_wrap 
+		width: 980px
 	.header_left_block
 		margin-right: 0
 	.header_left_block .header_info h1,
 		font-size: 22px
 	.header_left_block .header_info h2
 		font-size: 20px
-	.header_menu
-		width: 980px
 	.header_menu ul li
 		font-size: 20px
 	.content_icons
-		width: 980px
 		padding: 0
 	.content_icons > div:nth-child(1) > img:nth-child(1),
 	.content_icons > div:nth-child(2) > img:nth-child(1)
@@ -31,8 +33,6 @@
 		.icon_desc
 			font-size: 18px
 			min-height: 0
-	.content_items_wrap 
-		width: 980px
 		.content_item
 			width: 176px
 			height: 222px
@@ -41,11 +41,10 @@
 			margin-left: 10px
 		span
 			font-size: 18px
-	.footer_content
+	.footer_content,
 		display: inline-flex
 		flex-wrap: wrap
 		justify-content: center
-		width: 980px
 	.footer_right_block
 		margin-bottom: 20px
 		.map_large_screen
@@ -54,6 +53,11 @@
 			display: block
 
 @media only screen and (max-width : 980px)
+	.header_menu,
+	.content_icons,
+	.content_items_wrap,
+	.footer_content
+		width: 640px
 	header
 		background-image: url(../img/header_bg_mobile.jpg) !important
 	.header_top_bcg
@@ -103,8 +107,6 @@
 		a
 			font-size: 20px
 			line-height: 20px
-	.content_icons, .content_items_wrap
-		width: 640px
 	.content_icons > div:nth-child(1) > img:nth-child(1),
 	.content_icons > div:nth-child(2) > img:nth-child(1)
 		width: 50px
@@ -125,7 +127,6 @@
 		margin-bottom: 16px
 		margin-left: 10px
 	.footer_content
-		width: 640px
 		.footer_left_block
 			margin-right: 0
 		.footer_middle_block
@@ -142,6 +143,11 @@
 		margin-bottom: 10px
 
 @media only screen and (max-width : 640px)
+	.header_menu,
+	.content_icons,
+	.content_items_wrap,
+	.footer_content
+		width: 320px
 	header
 		height: 92vh
 	.header_left_block 
@@ -176,8 +182,6 @@
 		span
 			font-size: 12px
 			line-height: 12px
-	.content_icons, .content_items_wrap
-		width: 320px
 	.content_icons > div:nth-child(1) > img:nth-child(1),
 	.content_icons > div:nth-child(2) > img:nth-child(1)
 		width: 36px
@@ -226,8 +230,6 @@
 	.content_items
 		padding-bottom: 18px
 
-	.footer_content
-		width: 320px
 	.map_medium_screen,
 		display: none !important
 	.map_small_screen
