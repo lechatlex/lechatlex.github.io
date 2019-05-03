@@ -1,5 +1,9 @@
 $(function() {
 
+	// var windowWidth = window.innerWidth;
+	// $("header").css({ width: windowWidth});
+	// alert('viewport width is: '+ windowWidth + ' and viewport height is:' + windowHeight);
+
 	// Вычисляем высоту блока при загрузке страницы и оставляем её постоянной
 	// (устраняет дёргание блока при прокрутке страницы)
 	$('header').height(window.innerHeight + 'px');
@@ -7,8 +11,8 @@ $(function() {
 
 	// Вычисляем высоту блока при загрузке страницы и делаем резиновый отступ
 	header_height = $("header").outerHeight();
-	var header_right_block_height = header_height / 100 * 84;
-	var header_menu_height = header_height / 100 * 86;
+	header_right_block_height = header_height / 100 * 84;
+	header_menu_height = header_height / 100 * 86;
 	// alert("contentTopPosition "+ header_right_block_height + 'px');
 	$(".header_right_block").css({ top: header_right_block_height});
 	$(".header_menu").css({ top: header_menu_height});
