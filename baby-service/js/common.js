@@ -1,5 +1,6 @@
 $(function() {
 
+
 	// $(window).resize(function() {
 	// 	$('header').height(window.innerHeight + 'px');
 	// 	$('.header_app').height(window.innerHeight + 1 + 'px');
@@ -29,7 +30,6 @@ $(function() {
 	// alert("contentTopPosition "+ header_right_block_height + 'px');
 	// $(".header_right_block").css({ top: header_right_block_height});
 	$(".header_menu").css({ top: header_menu_height});
-
 
 
 	(function(cb) {
