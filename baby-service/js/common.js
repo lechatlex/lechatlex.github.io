@@ -27,7 +27,7 @@ $(function() {
 	header_right_block_height = header_height / 100 * 84;
 	header_menu_height = header_height / 100 * 86;
 	// alert("contentTopPosition "+ header_right_block_height + 'px');
-	$(".header_right_block").css({ top: header_right_block_height});
+	// $(".header_right_block").css({ top: header_right_block_height});
 	$(".header_menu").css({ top: header_menu_height});
 
 
