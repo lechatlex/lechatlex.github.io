@@ -22,6 +22,7 @@ $(function() {
 	// (устраняет дёргание блока при прокрутке страницы)
 	$('header').height(window.innerHeight + 'px');
 	$('.header_app').height(window.innerHeight + 1 + 'px');
+	$('.background').height(window.innerHeight + 1 + 'px');
 
 	// Вычисляем высоту блока при загрузке страницы и делаем резиновый отступ
 	header_height = $("header").outerHeight();
@@ -30,6 +31,15 @@ $(function() {
 	// alert("contentTopPosition "+ header_right_block_height + 'px');
 	// $(".header_right_block").css({ top: header_right_block_height});
 	$(".header_menu").css({ top: header_menu_height});
+
+	// Фоновое изображение для каждого пункта меню выводится со смещением для получения
+	// цельного фона при любом разрешении экрана
+	block_height = -(header_height / 6);
+	$(".nav-content > div > div:nth-child(2)").css({ "background-position-y": (block_height)});
+	$(".nav-content > div > div:nth-child(3)").css({ "background-position-y": (block_height * 2)});
+	$(".nav-content > div > div:nth-child(4)").css({ "background-position-y": (block_height * 3)});
+	$(".nav-content > div > div:nth-child(5)").css({ "background-position-y": (block_height * 4)});
+	$(".nav-content > div > div:nth-child(6)").css({ "background-position-y": (block_height * 5)});
 
 
 	(function(cb) {
