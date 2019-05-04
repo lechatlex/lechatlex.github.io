@@ -86,6 +86,7 @@ header
 
 .nav .nav-content .portion
 	// background: #fff
+	height: 50px
 	background: url(../img/bg_menu.jpg)
 	background-size: cover
 	background-position-x: center
@@ -148,10 +149,12 @@ header
 	z-index: 1
 
 .header_app .nav.open .nav-content .background .portion
+	display: flex
+	vertical-align: middle
+	justify-content: space-around
+	align-items: center
 	transform: translateX(0%)
-	text-align: center
 	font-size: 18px
-	line-height: 4em
 	text-transform: uppercase
 	font-family: RobotoRegular, sans-serif
 	font-style: normal
@@ -162,7 +165,7 @@ header
 	text-decoration: none
 	color: #001B28
 	cursor: pointer
-	padding: 20px
+	padding: 10px
 	
 .header_app .nav.open .btn-bar.menu 
 	transition: transform 0.3s ease-in-out, opacity 0.15s ease-in-out 0.15s
