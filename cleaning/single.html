@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com -->
-<!-- Last Published: Mon Aug 12 2019 10:15:53 GMT+0000 (UTC) -->
-<html data-wf-domain="cleaning-b27f5d.webflow.io" data-wf-page="5d4ff5688ab9f5b9fb0be3a0" data-wf-site="5d455a4252d2937b16bdf198" data-wf-status="1">
+<html>
 
 <head>
 	<meta charset="utf-8" />
 	<title>Single</title>
 	<meta content="Single" property="og:title" />
 	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<meta content="Webflow" name="generator" />
-	<link href="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/css/cleaning-b27f5d.webflow.a2b135e0a.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	WebFont.load({ google: { families: ["Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Play:regular:cyrillic-ext,cyrillic,latin", "Roboto:100,300,regular,500:cyrillic,latin", "Caveat:regular,700:cyrillic-ext,latin,cyrillic"] } });
@@ -20,8 +17,8 @@
 			t = " w-mod-";
 		n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);
 	</script>
-	<link href="https://uploads-ssl.webflow.com/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-	<link href="https://uploads-ssl.webflow.com/img/webclip.png" rel="apple-touch-icon" />
+	<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="assets/img/webclip.png" rel="apple-touch-icon" />
 </head>
 
 <body class="body-2">
@@ -29,17 +26,22 @@
 		<div class="modal_box">
 			<div class="div-block-51" data-ix="modal-contact-fade-out"></div>
 			<div class="form-block w-form">
-				<form id="email-form" name="email-form" data-name="Email Form" class="form-2"><label for="name-2" class="field-label">Заполните форму и мы перезвоним Вам</label><input type="text" class="text-field w-input" maxlength="256" name="name-2" data-name="Name 2" placeholder="Имя" id="name-2" /><input type="tel" class="text-field-2 w-input" maxlength="256" name="email-2" data-name="Email 2" placeholder="Телефон" id="email-2" required="" /><input type="submit" value="Оставить заявку" data-wait="Please wait..." class="submit-button w-button" /></form>
+				<form method="get" action="/" class="form-2">
+					<label for="node" class="field-label">Заполните форму и мы перезвоним Вам</label>
+					<input type="text" autofocus="true" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="text-field w-input" />
+					<input type="tel" class="text-field-2 w-input" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" required="" />
+					<input type="submit" value="Оставить заявку" data-wait="Please wait..." class="submit-button w-button" />
+				</form>
 				<div class="w-form-done">
-					<div>Thank you! Your submission has been received!</div>
+					<div>Спасибо! Ваша заявка отправлена.</div>
 				</div>
 				<div class="w-form-fail">
-					<div>Oops! Something went wrong while submitting the form.</div>
+					<div>Не удалось отправить заявку</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section-3">
+	<div id="header" class="section-3">
 		<div class="div-block-2">
 			<div class="div-block-32"><select id="City-2" name="City-2" data-name="City 2" required="" class="select-field-2 w-select">
 					<option value="Grodno">Гродно</option>
@@ -48,23 +50,25 @@
 				<div class="div-block-3">ул. Калючинская, д.12, пом.1</div>
 			</div>
 			<div class="div-block-31"><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f4350234581a39fd95_phone.svg" height="14" width="14" alt="" class="image" />
-				<div class="text-block"><a href="tel:+375336883877" class="tel1 link">+375(33) 688-38-77, </a><a href="tel:+375336560929" class="tel1">+375(33) 656-09-29</a></div>
+				<div class="text-block"><a href="tel:+375336883877" class="tel1 link">+375(33) 688-38-77,</a><a href="tel:+375336560929" class="tel1">+375(33) 656-09-29</a></div>
 			</div>
-			<div><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f40ae4a19dc5de7b3d_24-7.svg" width="14" height="16" alt="" class="image-2" />
+			<div class="div-block-58"><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f40ae4a19dc5de7b3d_24-7.svg" width="14" height="16" alt="" class="image-2" />
 				<div class="text-block-2">24/7, круглосуточно</div>
 			</div>
-			<div class="soc_header"><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f428d7ff39ebc9db94_viber.svg" width="24" height="24" alt="" class="img_soc_footer" /><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f452d293343ebe1558_whatsapp.svg" width="24" alt="" class="img_soc_footer" /><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f43502342a1239fd97_instagram.svg" width="20" alt="" class="img_soc_footer" /><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f4ac9dde382ee7ea32_vk.svg" width="20" alt="" class="img_soc_footer" /></div>
+			<div class="soc_header"><a href="viber://add?number=+375336717285" class="viber w-inline-block"><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f428d7ff39ebc9db94_viber.svg" width="24" height="24" alt="" class="img_soc_footer" /></a><a href="whatsapp://send?phone=+375336717285" class="whatsapp w-inline-block"><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f452d293343ebe1558_whatsapp.svg" width="24" alt="" class="img_soc_footer" /></a><a href="http://instagram" class="instagram w-inline-block"><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f43502342a1239fd97_instagram.svg" width="20" alt="" class="img_soc_footer" /></a><a href="http://vkontakte" class="vkontakte w-inline-block"><img src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/5d4562f4ac9dde382ee7ea32_vk.svg" width="20" alt="" class="img_soc_footer" /></a></div>
 		</div>
 	</div>
-	<div class="section-4">
+	<div>
 		<div class="div-block-6">
-			<div data-collapse="medium" data-animation="default" data-duration="400" class="navbar-3 w-nav">
-				<div class="container w-container">
-					<div class="text-block-3">Как для нас, так и для наших клиентов,<br />чистота – не пустой звук<br /></div><a href="#" class="brand w-nav-brand"></a>
+			<div class="div-block-59"><a href="/" class="brand w-nav-brand"></a>
+				<div class="text-block-3">Как для нас, так и для наших клиентов,<br />чистота – не пустой звук<br /></div>
+			</div>
+			<div data-collapse="medium" data-animation="default" data-duration="400" class="header-navbar w-nav">
+				<div class="div-block-60">
 					<nav role="navigation" class="nav-menu-4 w-nav-menu">
-						<div class="div-block-52"><a href="#" class="header-menu-item w-nav-link">Услуги</a><a href="#" class="header-menu-item w-nav-link">Главная</a><a href="#" class="header-menu-item w-nav-link">Акции</a><a href="#" class="header-menu-item w-nav-link">Галерея</a><a href="#" class="header-menu-item w-nav-link">Контакты</a></div>
+						<div class="div-block-52"><a href="/" class="header-menu-item single-menu-item w-nav-link">Главная</a><a href="/#services" class="header-menu-item single-menu-item w-nav-link">Услуги</a><a href="/#gallery" class="header-menu-item single-menu-item w-nav-link">Галерея</a><a href="/#discounts" class="header-menu-item single-menu-item w-nav-link">Акции</a><a href="/#contacts" class="header-menu-item single-menu-item w-nav-link">Контакты</a></div>
 					</nav>
-					<div class="menu-button w-nav-button">
+					<div class="menu-button menu_button w-nav-button">
 						<div class="icon w-icon-nav-menu"></div>
 					</div>
 				</div>
@@ -72,75 +76,327 @@
 		</div>
 	</div>
 	<div class="section-19"></div>
-	<div class="section-17">
-		<div class="div-block-40">
-			<div class="text-block-8 active">Сухая глубинная чистка</div>
-			<div class="text-block-8">Химчистка</div>
-			<div class="text-block-8">Уборка</div>
-			<div class="text-block-8">Пароочистка</div>
-			<div class="text-block-8">Мойка окон</div>
-			<div class="text-block-8">Аренда оборудования</div>
-		</div>
-	</div>
-	<div class="section-18">
-		<div class="div-block-42">
-			<h1 class="heading-9">Сухая глубинная чистка</h1>
-			<p class="paragraph-9">Сухая глубинная чистка проводится без использования моющих средств, при помощи профессионального оборудования Kirby, предназначена для устранения пыли, грязи, песка, остатков нашей кожи, пылевого клеща и его остатков жизнедеятельности из глубины ковров и мягких изделий. Данное оборудование позволяет совместить вакуумную чистку с мощным выбиванием. <br />Принцип работы заключается в том, что спереди насадки происходит вдувание, если это ковёр вглубь до основания, если это диван, матрац или мягкая мебель, тогда поток воздуха проникает вглубь до 30 см. После чего щетка работает по принципу выбивания (отбойный молоток), выгребая всю грязь из глубины, далее идёт всасывание собранной пыли, грязи. Благодаря этому, не вынося ковёр из дома (и даже не сдвигая) у наших специалистов появляется возможность ПОЛНОСТЬЮ очистить от песка, пыли и прочих загрязнений. Особенно актуально это для ковролина, который обычно крепится «намертво».</p>
-			<div class="div-block-43">
-				<div class="div-block-44">
-					<div class="div-block-47">
-						<div class="text-block-9 _1">Наименование услуги</div>
-						<div class="text-block-10 odd">Чистка ковра</div>
-						<div class="text-block-10 even">Чистка матраца (одноместный)</div>
-						<div class="text-block-10 odd">Чистка матраца (двухместный)</div>
-						<div class="text-block-10 even"><strong>Чистка мягкой мебели</strong></div>
-						<div class="text-block-10 odd">Кресло</div>
-						<div class="text-block-10 even">Одноместный диван</div>
-						<div class="text-block-10 odd">Двухместный диван</div>
-						<div class="text-block-10 even">Трехместный диван</div>
-						<div class="text-block-10 odd">Угловой диван</div>
-						<div class="text-block-10 even">Чистка подушки</div>
-						<div class="text-block-10 odd">Чистка одеяла</div>
-						<div class="text-block-10 even">Чистка пледа</div>
-						<div class="text-block-10 odd">Чистка мягкой игрушки</div>
+	<div>
+		<div class="div-block-57">
+			<div data-duration-in="300" data-duration-out="100" class="tabs w-tabs">
+				<div class="tabs-menu w-tab-menu">
+					<a id="deep_cleaning" data-w-tab="Tab 1" class="tab-link w-inline-block w-tab-link w--current">
+						<div class="text-block-13">Сухая глубинная чистка</div>
+					</a>
+					<a id="dry_cleaning" data-w-tab="Tab 2" class="tab-link w-inline-block w-tab-link">
+						<div class="text-block-15">Химчистка</div>
+					</a>
+					<a id="cleaning" data-w-tab="Tab 3" class="tab-link w-inline-block w-tab-link">
+						<div>Уборка</div>
+					</a>
+					<a id="steam_cleaning" data-w-tab="Tab 4" class="tab-link w-inline-block w-tab-link">
+						<div class="text-block-14">Пароочистка</div>
+					</a>
+					<a id="window_cleaning" data-w-tab="Tab 5" class="tab-link w-inline-block w-tab-link">
+						<div>Мойка окон</div>
+					</a>
+					<a id="equipment_rent" data-w-tab="Tab 6" class="tab-link w-inline-block w-tab-link">
+						<div>Аренда оборудования</div>
+					</a>
+				</div>
+				<div class="tabs-content w-tab-content">
+					<div data-w-tab="Tab 1" class="tab-pane-tab-1 w-tab-pane w--tab-active">
+						<div class="div-block-tab1">
+							<h1 class="heading-9">Сухая глубинная чистка</h1>
+							<p class="paragraph-9">Сухая глубинная чистка проводится без использования моющих средств, при помощи профессионального оборудования Kirby, предназначена для устранения пыли, грязи, песка, остатков нашей кожи, пылевого клеща и его остатков жизнедеятельности из глубины ковров и мягких изделий. Данное оборудование позволяет совместить вакуумную чистку с мощным выбиванием. <br />Принцип работы заключается в том, что спереди насадки происходит вдувание, если это ковёр вглубь до основания, если это диван, матрац или мягкая мебель, тогда поток воздуха проникает вглубь до 30 см. После чего щетка работает по принципу выбивания (отбойный молоток), выгребая всю грязь из глубины, далее идёт всасывание собранной пыли, грязи. Благодаря этому, не вынося ковёр из дома (и даже не сдвигая) у наших специалистов появляется возможность ПОЛНОСТЬЮ очистить от песка, пыли и прочих загрязнений. Особенно актуально это для ковролина, который обычно крепится «намертво».</p>
+							<div class="div-block-43">
+								<div class="div-block-44">
+									<div class="div-block-47">
+										<div class="text-block-9 _1">Наименование услуги</div>
+										<div class="text-block-10 odd">Чистка ковра</div>
+										<div class="text-block-10 even">Чистка матраца (одноместный)</div>
+										<div class="text-block-10 odd">Чистка матраца (двухместный)</div>
+										<div class="text-block-10 even"><strong>Чистка мягкой мебели</strong></div>
+										<div class="text-block-10 odd list_elem">Кресло</div>
+										<div class="text-block-10 even list_elem">Одноместный диван</div>
+										<div class="text-block-10 odd list_elem">Двухместный диван</div>
+										<div class="text-block-10 even list_elem">Трехместный диван</div>
+										<div class="text-block-10 odd list_elem">Угловой диван</div>
+										<div class="text-block-10 even">Чистка подушки</div>
+										<div class="text-block-10 odd">Чистка одеяла</div>
+										<div class="text-block-10 even">Чистка пледа</div>
+										<div class="text-block-10 odd">Чистка мягкой игрушки</div>
+									</div>
+									<div class="div-block-48">
+										<div class="text-block-9 _2">Единица измерения</div>
+										<div class="div-block-45 odd">м2</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even"></div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+									</div>
+									<div class="div-block-49">
+										<div class="text-block-9 _3">Стоимость,<br />рубли</div>
+										<div class="div-block-46 odd">3,00</div>
+										<div class="div-block-46 even">20,00</div>
+										<div class="div-block-46 odd">30,00</div>
+										<div class="div-block-46 even"></div>
+										<div class="div-block-46 odd">10,00</div>
+										<div class="div-block-46 even">15,00</div>
+										<div class="div-block-46 odd">20,00</div>
+										<div class="div-block-46 even">25,00</div>
+										<div class="div-block-46 odd">30,00 - 40,00</div>
+										<div class="div-block-46 even">5,00</div>
+										<div class="div-block-46 odd">10,00</div>
+										<div class="div-block-46 even">10,00</div>
+										<div class="div-block-46 odd">5,00 - 10,00</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="div-block-48">
-						<div class="text-block-9 _2">Единица измерения</div>
-						<div class="div-block-45 odd">м2</div>
-						<div class="div-block-45 even">шт.</div>
-						<div class="div-block-45 odd">шт.</div>
-						<div class="div-block-45 even"></div>
-						<div class="div-block-45 odd">шт.</div>
-						<div class="div-block-45 even">шт.</div>
-						<div class="div-block-45 odd">шт.</div>
-						<div class="div-block-45 even">шт.</div>
-						<div class="div-block-45 odd">шт.</div>
-						<div class="div-block-45 even">шт.</div>
-						<div class="div-block-45 odd">шт.</div>
-						<div class="div-block-45 even">шт.</div>
-						<div class="div-block-45 odd">шт.</div>
+					<div data-w-tab="Tab 2" class="w-tab-pane">
+						<div class="div-block-tab1">
+							<h1 class="heading-9">Химчистка</h1>
+							<p class="paragraph-9">Химчистка проводится с помощью моющих средств, таких как: Grass, karcher, pro-brite. С использованием профессионального оборудования Karcher Puzzi 8/1 C, предназначена для удаления пятен естественного происхождения (чай, кофе, остатки еды, детские шалости), на 70 - 80 % восстанавливает насыщенность, тон, цветовую гамму изделия, на 100%убивает все микроорганизмы находящиеся в изделии. Механическим путём убираем пятна, после чего вытягивая из нутрии всю грязь. Вторую жизнь мы изделию не даём, но возвращаем к жизни. Химчистка является более эстетическим моментом, и мы достигаем максимального результата, чтобы изделие становилось как новое и ещё многие годы радовала своих хозяев.<br /><br /><strong><em>- Химчистка автомобиля <br /></em></strong>Х/ч авто предназначена для полной очистки автомобиля, так сказать подготавливаем авто к продаже,естественно изнутри. В неё входит как с/ч, так и х/ч. Выбираем абсолютно всё, потолок, сидения, напольное покрытие, дверки, багажник,приборная панель, вычищаем все швы, Балтики, вплоть до прорезей на педалях. Т.е. не только избавляем от пыли грязи и пятен, но и передаем салону ослепительный вид, чтобы люди смотрели, радовались и не верили своим глазам </p>
+							<div class="div-block-43">
+								<div class="div-block-44">
+									<div class="div-block-47">
+										<div class="text-block-9 _1">Наименование услуги</div>
+										<div class="text-block-10 odd">Химчистка автомобиля</div>
+										<div class="text-block-10 even">Чистка ковра</div>
+										<div class="text-block-10 odd small_height">Чистка матраца (одноместный) <strong>1 сторона</strong></div>
+										<div class="text-block-10 even small_height">Чистка матраца (двухместный) <strong>1 сторона</strong></div>
+										<div class="text-block-10 odd"><strong>Чистка мягкой мебели</strong></div>
+										<div class="text-block-10 even list_elem">Кресло</div>
+										<div class="text-block-10 odd list_elem">Стул</div>
+										<div class="text-block-10 even list_elem">Кресло-кровать</div>
+										<div class="text-block-10 odd list_elem">Одноместный диван</div>
+										<div class="text-block-10 even list_elem">Двухместный диван</div>
+										<div class="text-block-10 odd list_elem">Трёхместный диван</div>
+										<div class="text-block-10 even list_elem">Угловой диван 4-местный</div>
+										<div class="text-block-10 odd list_elem">Угловой диван 5-местный</div>
+										<div class="text-block-10 even">Чистка подушки</div>
+										<div class="text-block-10 odd">Чистка одеяла (1 сторона)</div>
+										<div class="text-block-10 even">Чистка пледа (1 сторона)</div>
+										<div class="text-block-10 odd">Чистка мягкой игрушки</div>
+									</div>
+									<div class="div-block-48">
+										<div class="text-block-9 _2">Единица измерения</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd"></div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+									</div>
+									<div class="div-block-49">
+										<div class="text-block-9 _3">Стоимость,<br />рубли</div>
+										<div class="div-block-46 odd">От 100,00</div>
+										<div class="div-block-46 even">3,00 - 5,00</div>
+										<div class="div-block-46 odd">От 15,00</div>
+										<div class="div-block-46 even">От 20,00</div>
+										<div class="div-block-46 odd"></div>
+										<div class="div-block-46 even">От 15,00</div>
+										<div class="div-block-46 odd">От 5,00</div>
+										<div class="div-block-46 even">От 18,00</div>
+										<div class="div-block-46 odd">От 20,00</div>
+										<div class="div-block-46 even">От 20,00</div>
+										<div class="div-block-46 odd">От 30,00</div>
+										<div class="div-block-46 even">От 40,00</div>
+										<div class="div-block-46 odd">От 50,00</div>
+										<div class="div-block-46 even">10,00</div>
+										<div class="div-block-46 odd">От 10,00</div>
+										<div class="div-block-46 even">От 10,00</div>
+										<div class="div-block-46 odd">10,00 - 20,00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="paragraph-10">*В химчистку диванов подушки и валики НЕ входят<br />* базовая ширина одного посадочного места равна 60 см<br />**на чистку раскладных диванов действует повышающий коэффициент 1,3<br />*** на чистку диванов светлых тонов действует повышающий коэффициент 1,2<br />* на чистку ковров загрязненных мочой действует повышающий коэффициент 1,8<br />** на чистку ковров с длинной ворса более 1,5 см действует повышающий коэффициент 1,3<br />*** на чистку ковров светлых тонов действует повышающий коэффициент 1,2</p>
 					</div>
-					<div class="div-block-49">
-						<div class="text-block-9 _3">Стоимость,<br />рубли</div>
-						<div class="div-block-46 odd">3, 00</div>
-						<div class="div-block-46 even">20 00</div>
-						<div class="div-block-46 odd">30, 00</div>
-						<div class="div-block-46 even"></div>
-						<div class="div-block-46 odd">10, 00</div>
-						<div class="div-block-46 even">15, 00</div>
-						<div class="div-block-46 odd">20, 00</div>
-						<div class="div-block-46 even">25, 00</div>
-						<div class="div-block-46 odd">30, 00 - 40,00</div>
-						<div class="div-block-46 even">5, 00</div>
-						<div class="div-block-46 odd">10, 00</div>
-						<div class="div-block-46 even">10, 00</div>
-						<div class="div-block-46 odd">5, 00 - 10,00</div>
+					<div data-w-tab="Tab 3" class="w-tab-pane">
+						<div class="div-block-tab1">
+							<h1 class="heading-9">Уборка</h1>
+							<p class="paragraph-9"><strong><em>-генеральная уборка<br />‍</em></strong>Генеральная уборка помещений.<br />Все та же чистка, только применительно к помещениям. Включает в себя, основное - пароочистка, что касается плитки,духового шкафа, кухонный шкафов и их стеклянных поверхностей, в том числе и мойка окон, и в целом мест, где хоть как-то мог «осесть» и скопиться жир. Также осуществляется чистка раковины, включающая чистку и полировку смесителей, самих кранов.<br />Радиатор отопления, кухонная вытяжка с полной очисткой тех самых «сот». Холодильник, варочная поверхность, микроволновка.Если подытожить, то берётся один квадратный метр и все, что в него входит, вычищается и вымывается. Ванная комната.<br />То же отпаривание, только уже применительно к душевым кабинкам, ванне, плитке, раковине, смесителям, трубам, радиатору отопления, шкафчикам, зеркалам и всем твёрдым поверхностям, удаляя трудновыводимые отложения.<br /><br />Иные помещения:<br />Мойка окон, и все, что к ним прилагается; сухая чистка ковров и ковровых покрытий, находящегося в помещении, радиатор отопления в случае, если он не в стене, шкафчики/полочки, двери.<br /><br /><strong><em>-уборка после ремонта<br />‍</em></strong>Уборка после ремонта является одной из наиболее популярных услуг. И это не удивительно. Порой бывает непросто привести помещение в надлежащий вид после ремонта, да и сама по себе эта задача не из легких и попытки решить её самостоятельно могут привести к определенным трудностям, а то и вовсе завести в тупик. Поэтому владельцы квартир все чаще предпочитают обращаться с этой проблемой к профессионалам.<br /><br />Что включает в себя послеремонтная уборка <br />Когда все ремонтные работы подходят к концу,остаются горы мусора, слои пыли, куча мелких отходов и других нелицеприятных вещей. По всему помещению можно обнаружить места с пылью и грязью, которая может появиться, например: после поклейки обоев, раскладки кафельной плитки, прокладки электропроводки и т.д.<br /><br />Навести порядок в помещении после окончания строительно-ремонтных работ вам поможет команда высококвалифицированныхспециалистов, которые подходят к своему делу с профессионализмом и особой ответственностью. Они осуществят генеральную уборку помещения, удалят следы грязи и пыли, с окон и пола. По завершению нашей работы, помещение наполнится ослепительным блеском. Окна, двери, подоконники будут сиять от чистоты.<br /><br />Как мы работаем?<br />Мы предоставляем свои услуги в любое удобное для заказчика время. Работаем 7 дней в неделю, без праздников и выходных.<br /><br />Что же нужно сделать для оформления услуги по уборке после ремонта цена, которой будет доступна всем? Все довольно просто! При оформлении заявки укажите дату и нужное вам время, и наши специалисты прибудут в указанные вами сроки. Также они привезут с собой самые эффективные чистящие и моющие средства, и необходимое оборудование. Оплата производится по окончанию работ.<strong><em>- поддерживающая уборка. </em></strong>Поддерживающая уборка предназначена для обеспечения регулярной чистоты в Вашей квартире, коттедже, загородном доме, офисе, производственном помещении.<br />​<br />Мы рекомендуем проводить Поддерживающую уборку для жилых помещений еженедельно, а для организаций - на ежедневной основе.<br /><br />Поддерживающая Уборка включает в себя сухую глубинную чистку ковровых покрытий, влажную уборку пола и плинтуса, удаление пыли и слабых загрязнений, зеркал, кухонного гарнитура и бытовой техники.Стоимость поддерживающей уборки рассчитывается с каждым клиентом индивидуально.Для постоянных клиентов действует система скидок.<br />Поддерживающая Уборка производится только после произведения генеральной уборки.</p>
+							<div class="div-block-43">
+								<div class="div-block-44">
+									<div class="div-block-47">
+										<div class="text-block-9 _1">Наименование услуги</div>
+										<div class="text-block-10 odd">Генеральная уборка помещений</div>
+										<div class="text-block-10 even"><strong>Генеральная уборка кухни:</strong></div>
+										<div class="text-block-10 odd list_elem">- до 6 м2</div>
+										<div class="text-block-10 even list_elem">- от 6 до 10 м2</div>
+										<div class="text-block-10 odd list_elem">- свыше 10 м2</div>
+										<div class="text-block-10 even">Уборка после ремонта</div>
+										<div class="text-block-10 odd">Поддерживающая уборка (после генеральной)</div>
+										<div class="text-block-10 even">Генеральная уборка санузла</div>
+									</div>
+									<div class="div-block-48">
+										<div class="text-block-9 _2">Единица измерения</div>
+										<div class="div-block-45 odd">м2</div>
+										<div class="div-block-45 even"></div>
+										<div class="div-block-45 odd">м2</div>
+										<div class="div-block-45 even">м2</div>
+										<div class="div-block-45 odd">м2</div>
+										<div class="div-block-45 even">м2</div>
+										<div class="div-block-45 odd">м2</div>
+										<div class="div-block-45 even">м2</div>
+									</div>
+									<div class="div-block-49">
+										<div class="text-block-9 _3">Стоимость,<br />рубли</div>
+										<div class="div-block-46 odd">3,00 - 5,00</div>
+										<div class="div-block-46 even"></div>
+										<div class="div-block-46 odd">15,00 - 20,00</div>
+										<div class="div-block-46 even">13,00 - 15,00</div>
+										<div class="div-block-46 odd">10,00 - 13,00</div>
+										<div class="div-block-46 even">3,00 - 5,00</div>
+										<div class="div-block-46 odd">1,00 - 2,00</div>
+										<div class="div-block-46 even">15,00 - 20,00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-w-tab="Tab 4" class="w-tab-pane">
+						<div class="div-block-tab1">
+							<h1 class="heading-9">Пароочистка</h1>
+							<p class="paragraph-9">Пароочистка используется в основном для твёрдых поверхностей (плитка, ванна, раковина, кухонная техника и т.д.). Вымывает и отпаривает поверхности, жировые залежи, камень, въевшиеся пятна. С помощью пара при t=130 C при давлении 5 bar микробы уничтожаются (я гарантирую это)Керамическая плитка является неотъемлемым элементом многих туалетов, ванных комнат и кухонь. Содержать в чистоте помещения, где человек проводит гигиенические процедуры и готовит пищу крайне необходимо, но иногда требует много сил и времени. К тому же, некоторые работы на должном уровне возможно выполнить лишь с использованием профессиональных чистящих средств и оборудования. В случае, если у Вас нет необходимых навыков или возможностей для поддержания плитки в чистоте Мы предлагаем услугу очистки горячим паром плитки и швов на полу и стенах в ванных, кухнях, туалетах и душевых. В работе используются пароочистители Керхер sc5. С их помощью мы легко удаляем даже самый старый налет и ржавчину. Помимо очистки, проводится также и дезинфекция плитки и швов — пар, нагретый до температуры 120 C0, запросто справляется и с этими загрязнениями При пароочистке не используются химические чистящие средства, а безопасные моющие, она является экологически безопасным способом уборки, а потому может использоваться в жилых и сантехнических помещениях без вреда для людей и животных. Чистка бытовой техники, которая используется для приготовления еды,пожалуй, самое трудоемкое мероприятие при уборке кухни. Достаточно сложно качественно и быстро удалить жир, пыль и пригары из микроволновой печи,духовки, варочной поверхности или вытяжки. Для того, чтобы отмывать все это вручную не всегда найдутся время и силы. К тому же использовать на поверхностях, непосредственно контактирующих с пищей, эффективные чистящие химические средства небезопасно. Предлагаем услугу безвредной – без использования химии – пароочистки и дезинфекции микроволновых печей, духовок, варочных поверхностей и вытяжек пароочистителем Керхер sc5. Именно он как нельзя лучше подходит для уборки жира, накипи, пыли и прочей трудно выводимой грязи с кухонной техники. Горячий пар, выходя под давлением, запросто справляется со всеми загрязнениями. В зависимости от покрытия техники температура пара и технологии очистки могут варьироваться. Максимальная температура, которая используется при пароочистке – 130 C0. Перед такой температурой не устоят даже самые старые пятна жира и накипи. Высокая температура пара обеспечивает также эффективную дезинфекцию техники.</p>
+							<div class="div-block-43">
+								<div class="div-block-44">
+									<div class="div-block-47">
+										<div class="text-block-9 _1">Наименование услуги</div>
+										<div class="text-block-10 odd">Напольное покрытие (ламинат, линолеум)</div>
+										<div class="text-block-10 even">Плитка + межплиточные швы</div>
+										<div class="text-block-10 odd">Смеситель</div>
+										<div class="text-block-10 even">Раковина, умывальник</div>
+										<div class="text-block-10 odd">Душевая кабинка, ванна</div>
+										<div class="text-block-10 even">Кухонная мебель</div>
+										<div class="text-block-10 odd">Микроволновая печь</div>
+										<div class="text-block-10 even">Духовой шкаф</div>
+										<div class="text-block-10 odd">Варочная поверхность</div>
+										<div class="text-block-10 even">Кухонная вытяжка</div>
+										<div class="text-block-10 odd">Радиатор отопления</div>
+									</div>
+									<div class="div-block-48">
+										<div class="text-block-9 _2">Единица измерения</div>
+										<div class="div-block-45 odd">м2</div>
+										<div class="div-block-45 even">м2</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+										<div class="div-block-45 even">шт.</div>
+										<div class="div-block-45 odd">шт.</div>
+									</div>
+									<div class="div-block-49">
+										<div class="text-block-9 _3">Стоимость,<br />рубли</div>
+										<div class="div-block-46 odd">1,50</div>
+										<div class="div-block-46 even">5,00</div>
+										<div class="div-block-46 odd">10,00</div>
+										<div class="div-block-46 even">20,00</div>
+										<div class="div-block-46 odd">40,00 - 60,00</div>
+										<div class="div-block-46 even">40,00 - 60,00</div>
+										<div class="div-block-46 odd">20,00 - 30,00</div>
+										<div class="div-block-46 even">40,00 - 50,00</div>
+										<div class="div-block-46 odd">20,00</div>
+										<div class="div-block-46 even">20,00 - 40,00</div>
+										<div class="div-block-46 odd">10,00 - 20,00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-w-tab="Tab 5" class="w-tab-pane">
+						<div class="div-block-tab1">
+							<h1 class="heading-9">Мойка окон</h1>
+							<p class="paragraph-9">Мытье стекол в квартире – занятие трудоемкое и довольно утомительное. Как правило, для этого по старинке используются всевозможные чистящие средства, тряпочки и газеты. И результат зачастую оставляет желать лучшего.Чистые окна оказывают положительное влияние не только на атмосферу в помещении и настроение находящихся в нем людей, а также на снижение энергозатрат, необходимых на его освещение и отопление. Специалисты компании «Даймонд Сервис » выполнят мытье окон, лоджий, балконов с помощью специальных моющих средств и оборудования. <br />Комплексный и профессиональный подход обеспечит безупречную сияющую чистоту всех стекольных конструкций. <br />Работы при Мытье окон:<br /> Мытье стекол (внутренняя и внешняя поверхности).<br /> Мытье оконных рам изнутри и снаружи.<br /> Продувка фурнитуры.<br /> Отбеливание пластика.<br />‍<strong>Преимущества сотрудничества с нашей компанией</strong>:<br /> Мы умеем мыть окна без разводов.<br /> Мы умеем мыть окна качественно и быстро.<br /> В работе мы используем только высококачественное оборудование.<br /> У нас большой опыт работы.<br /> Доступные цены.<br /> Оперативное выполнение работ. </p>
+							<div class="div-block-43">
+								<div class="div-block-44">
+									<div class="div-block-47">
+										<div class="text-block-9 _1">Наименование услуги</div>
+										<div class="text-block-10 odd">Мойка окон</div>
+									</div>
+									<div class="div-block-48">
+										<div class="text-block-9 _2">Единица измерения</div>
+										<div class="div-block-45 odd">м2</div>
+									</div>
+									<div class="div-block-49">
+										<div class="text-block-9 _3">Стоимость,<br />рубли</div>
+										<div class="div-block-46 odd">8,00</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div data-w-tab="Tab 6" class="w-tab-pane">
+						<div class="div-block-tab1">
+							<h1 class="heading-9">Аренда оборудования</h1>
+							<p class="paragraph-9 rent">Чистый ковер и диван создадут Вам дополнительное ощущение уюта и комфорта Вашего дома и квартиры! Предоставим в прокат:<br /> Моющие пылесосы Керхер (для химчистки) <br /> Пароочистители Керхер<br /> Пылесосы для сухой глубинной чистки<br /> Пылесосы для мойки окон<br />* * *Прокат(аренда) профессионального моющего пылесоса Керхер. Применяется для чистки любых Ваших текстильных вещей (диван, кресло, ковры, обивка стульев, салон авто). Пятна/загрязнения/разводы - можно удалить с Ваших изделий. Будет чисто.Если Вас интересует более полная информация или остались вопросы? Звоните нам. Проконсультируем и научим пользоваться. Доставка возможна.</p>
+							<div class="div-block-43">
+								<div class="div-block-44">
+									<div class="div-block-47">
+										<div class="text-block-9 _1">Наименование услуги</div>
+										<div class="text-block-10 odd big_cell">Прокат моющего пылесоса Керхер профессионал PUZZI 8/1</div>
+										<div class="text-block-10 even big_cell">Прокат пароочистителя Керхер SC5</div>
+										<div class="text-block-10 odd big_cell">Прокат Kirby Sentrya для сухой глубинной чистки</div>
+										<div class="text-block-10 even big_cell">Прокат Стеклоочистителя Керхер VW5</div>
+										<div class="text-block-10 odd big_cell"><strong>При использовании оборудования от 2 дней и более цена намного меньше:</strong></div>
+										<div class="text-block-10 even list_elem">1 день</div>
+										<div class="text-block-10 odd list_elem">2 дня</div>
+										<div class="text-block-10 even list_elem">3 дня</div>
+										<div class="text-block-10 odd list_elem">Суббота - воскресенье</div>
+									</div>
+									<div class="div-block-48">
+										<div class="text-block-9 _2">Единица измерения</div>
+										<div class="div-block-45 odd big_cell">сутки</div>
+										<div class="div-block-45 even big_cell">сутки</div>
+										<div class="div-block-45 odd big_cell">сутки</div>
+										<div class="div-block-45 even big_cell">сутки</div>
+										<div class="div-block-45 odd big_cell"></div>
+										<div class="div-block-45 even"></div>
+										<div class="div-block-45 odd"></div>
+										<div class="div-block-45 even"></div>
+										<div class="div-block-45 odd"></div>
+									</div>
+									<div class="div-block-49">
+										<div class="text-block-9 _3">Стоимость,<br />рубли</div>
+										<div class="div-block-46 odd big_cell">25,00</div>
+										<div class="div-block-46 even big_cell">25,00</div>
+										<div class="div-block-46 odd big_cell">30,00</div>
+										<div class="div-block-46 even big_cell">10,00</div>
+										<div class="div-block-46 odd big_cell"></div>
+										<div class="div-block-46 even">30,00</div>
+										<div class="div-block-46 odd">50,00</div>
+										<div class="div-block-46 even">65,00</div>
+										<div class="div-block-46 odd">45</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="section-15">
+	<div id="contacts" class="section-15">
 		<div class="div-block-27">
 			<div class="div-block-28 div-block-35 div-block-36">
 				<div class="div-block-37 div-block-38 div-block-39" data-ix="bgc-smaller"></div>
@@ -178,12 +434,8 @@
 		</div>
 	</div>
 	<script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/js/webflow.3898afbd3.js" type="text/javascript"></script>
+	<script src="https://uploads-ssl.webflow.com/5d455a4252d2937b16bdf198/js/webflow.6e8e0786e.js" type="text/javascript"></script>
 	<!--[if lte IE 9]><script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
-    <script type="text/javascript">
-		$(document).ready(function() { $('[href*="brandjs"]').attr('style', 'display:none !important');
-		$('a[href="' + window.location.href + '"]').addClass('w--current'); });
-		</script>
 </body>
 
 </html>
