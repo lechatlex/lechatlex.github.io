@@ -79,12 +79,12 @@
 
 .div-block-3 {
   display: inline-block;
-  width: 189px;
+  width: 245px;
   height: 16px;
   margin-right: -6px;
   margin-left: 4px;
   font-family: Play, sans-serif;
-  line-height: 16px;
+  line-height: 16px
 }
 
 .image {
@@ -3520,6 +3520,7 @@
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    z-index: 20000;
   }
   .div-block-34 {
     width: 80%;

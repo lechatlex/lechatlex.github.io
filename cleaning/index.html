@@ -42,14 +42,18 @@
 	</div>
 	<div id="header" class="section-3">
 		<div class="div-block-2">
-			<div class="div-block-32"><select id="City-2" name="City-2" data-name="City 2" required="" class="select-field-2 w-select">
-					<option value="Grodno">Гродно</option>
-					<option value="Brest">Брест</option>
+			<div class="div-block-32">
+				<select id="Cities" name="Cities" data-name="Cities" required="" class="select-field-2 w-select">
+					<option class="Grodno" value="Grodno">Гродно</option>
+					<option class="Brest" value="Brest">Брест</option>
 				</select>
-				<div class="div-block-3">ул. Калючинская, д.12, пом.1</div>
+				<!--<div class="div-block-3">ул. Калючинская, д.12, пом.1</div>-->
+				<div id="address" class="div-block-3">ул. Калючинская, д.12, пом.1</div>
 			</div>
 			<div class="div-block-31"><img src="assets/img/5d4562f4350234581a39fd95_phone.svg" height="14" width="14" alt="" class="image" />
-				<div class="text-block"><a href="tel:+375336883877" class="tel1 link">+375(33) 688-38-77,</a><a href="tel:+375336560929" class="tel1">+375(33) 656-09-29</a></div>
+				<div id="phones" class="text-block"><a href="tel:+375336883877" class="tel1 link">+375(33) 688-38-77,</a>
+					<a href="tel:+375336560929" class="tel1">+375(33) 656-09-29</a>
+				</div>
 			</div>
 			<div class="div-block-58"><img src="assets/img/5d4562f40ae4a19dc5de7b3d_24-7.svg" width="14" height="16" alt="" class="image-2" />
 				<div class="text-block-2">24/7, круглосуточно</div>
@@ -59,7 +63,8 @@
 	</div>
 	<div data-w-id="7335cd70-48ac-93ea-f987-97e85f3d8233" class="section-4 section-20 section-21">
 		<div class="div-block-6">
-			<div class="div-block-59"><a href="/" class="brand w-nav-brand w--current"></a>
+			<div class="div-block-59">
+				<a href="/" class="brand w-nav-brand w--current"></a>
 				<div class="text-block-3">Как для нас, так и для наших клиентов,<br />чистота – не пустой звук<br /></div>
 			</div>
 			<div data-collapse="medium" data-animation="default" data-duration="400" class="header-navbar w-nav">
