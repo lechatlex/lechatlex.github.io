@@ -41,10 +41,12 @@ $(document).ready(function(){
                 "class=\"tel1 link\">+375(33) 688-38-77,</a>\n" +
                 "\t\t\t\t\t<a href=\"tel:+375336560929\" class=\"tel1\">+375(33) 656-09-29</a>\n" +
                 "\t\t\t\t</div>");
+            $("#logo").html("<a href=\"index.html\" class=\"brand w-nav-brand w--current\"><img src=\"assets/img/5d4562f428d7ffd4cac9db95_logo_grodno.svg\" alt=\"\"/></a>");
         } else if ($("#Cities option:selected").hasClass("Brest")) {
             $("#address").html("<div class=\"div-block-3\">ул. Менжинского, д.30-29, пом. 29-8</div>");
             $("#phones").html("<div id=\"phones\" class=\"text-block\"><a href=\"tel:+375298227002\" " +
                 "class=\"tel1 link\">+375(29) 822-70-02</a></div>");
+            $("#logo").html("<a href=\"index.html\" class=\"brand w-nav-brand w--current\"><img src=\"assets/img/5d4562f428d7ffd4cac9db95_logo_brest.svg\" alt=\"\"/></a>");
         }
     });
 });
