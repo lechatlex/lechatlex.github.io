@@ -33,23 +33,177 @@ function Ea(a){for(var b=a.f.length,c=0;c<b;c++){var d=a.f[c].split(":"),e=d[0].
 g,0<d.length&&(d=Aa[d[0]])&&(a.c[e]=d))}a.c[e]||(d=Aa[e])&&(a.c[e]=d);for(d=0;d<f.length;d+=1)a.a.push(new H(e,f[d]))}};function Fa(a,b){this.c=a;this.a=b}var Ga={Arimo:!0,Cousine:!0,Tinos:!0};Fa.prototype.load=function(a){var b=new C,c=this.c,d=new va(this.a.api,z(c),this.a.text),e=this.a.families;xa(d,e);var f=new za(e);Ea(f);A(c,ya(d),D(b));F(b,function(){a(f.a,f.c,Ga)})};function Ha(a,b){this.c=a;this.a=b}Ha.prototype.load=function(a){var b=this.a.id,c=this.c.m;b?B(this.c,(this.a.api||"https://use.typekit.net")+"/"+b+".js",function(b){if(b)a([]);else if(c.Typekit&&c.Typekit.config&&c.Typekit.config.fn){b=c.Typekit.config.fn;for(var e=[],f=0;f<b.length;f+=2)for(var g=b[f],k=b[f+1],h=0;h<k.length;h++)e.push(new H(g,k[h]));try{c.Typekit.load({events:!1,classes:!1,async:!0})}catch(m){}a(e)}},2E3):a([])};function Ia(a,b){this.c=a;this.f=b;this.a=[]}Ia.prototype.load=function(a){var b=this.f.id,c=this.c.m,d=this;b?(c.__webfontfontdeckmodule__||(c.__webfontfontdeckmodule__={}),c.__webfontfontdeckmodule__[b]=function(b,c){for(var g=0,k=c.fonts.length;g<k;++g){var h=c.fonts[g];d.a.push(new H(h.name,ga("font-weight:"+h.weight+";font-style:"+h.style)))}a(d.a)},B(this.c,z(this.c)+(this.f.api||"//f.fontdeck.com/s/css/js/")+ea(this.c)+"/"+b+".js",function(b){b&&a([])})):a([])};var Y=new pa(window);Y.a.c.custom=function(a,b){return new ua(b,a)};Y.a.c.fontdeck=function(a,b){return new Ia(b,a)};Y.a.c.monotype=function(a,b){return new sa(b,a)};Y.a.c.typekit=function(a,b){return new Ha(b,a)};Y.a.c.google=function(a,b){return new Fa(b,a)};var Z={load:p(Y.load,Y)};"function"===typeof define&&define.amd?define(function(){return Z}):"undefined"!==typeof module&&module.exports?module.exports=Z:(window.WebFont=Z,window.WebFontConfig&&Y.load(window.WebFontConfig));}());
 
 
+
+
 $(document).ready(function(){
-    $('#Cities').change(function(){
+
+    $(function(){
+        if ( window.location.hash ) {
+            $(window.location.hash).click(); //clicks on element specified by hash
+        }
+    });
+
+    var cityName = $('#Cities').find(":selected").text();
+    if (cityName == "Гродно") {
+        $("#address").html("<div class=\"div-block-3\">ул. Калючинская, д.12, пом.1</div>");
+        $("#phones").html("<div id=\"phones\" class=\"text-block\"><a href=\"tel:+375336883877\" " +
+            "class=\"tel1 link\">+375(33) 688-38-77,</a>\n" +
+            "\t\t\t\t\t<a href=\"tel:+375336560929\" class=\"tel1\">+375(33) 656-09-29</a>\n" +
+            "\t\t\t\t</div>");
+        $("#logo").html("<a href=\"index.html\" class=\"brand w-nav-brand w--current\"><img src=\"assets/img/5d4562f428d7ffd4cac9db95_logo_grodno.svg\" alt=\"\"/></a>" +
+            "<div class=\"text-block-3\">Как для нас, так и для наших клиентов,<br />чистота – не пустой звук<br /></div>");
+
+        $("#header_viber").html("<a href=\"viber://add?number=+375336717285\" class=\"viber w-inline-block\">" +
+            "<img src=\"assets/img/5d4562f428d7ff39ebc9db94_viber.svg\" width=\"24\" height=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#header_whatsapp").html("<a href=\"whatsapp://send?phone=+375336717285\" class=\"whatsapp w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f452d293343ebe1558_whatsapp.svg\" width=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#header_instagram").html("<a href=\"https://www.instagram.com/cleaningdream/\" class=\"instagram w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f43502342a1239fd97_instagram.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#header_vk").html("<a href=\"https://vk.com/id247111817\" class=\"vkontakte w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f4ac9dde382ee7ea32_vk.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#footer_viber").html("<a href=\"viber://add?number=+375336717285\" class=\"viber w-inline-block\">" +
+            "<img src=\"assets/img/5d4562f428d7ff39ebc9db94_viber.svg\" width=\"24\" height=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#footer_whatsapp").html("<a href=\"whatsapp://send?phone=+375336717285\" class=\"whatsapp w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f452d293343ebe1558_whatsapp.svg\" width=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#footer_instagram").html("<a href=\"https://www.instagram.com/cleaningdream/\" class=\"instagram w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f43502342a1239fd97_instagram.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#footer_vk").html("<a href=\"https://vk.com/id247111817\" class=\"vkontakte w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f4ac9dde382ee7ea32_vk.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+
+
+        $("#contacts_company_name").html("<p class=\"footer_info\">Частное предприятие <strong>“Даймонд сервис”</strong></p>");
+        $("#contacts_address").html("<p class=\"footer_info\">г. Гродно, ул. Калючинская, д.12, пом.1</p>");
+        $("#contacts_phone").html("<p class=\"footer_info\">" +
+            "<strong class=\"bold-text\">тел. </strong> " +
+            "<a href=\"tel:+375336883877\" class=\"link-2\">+375 (33)688-38-77</a>, " +
+            "<a href=\"tel:+375336560929\" class=\"link-3\"> +375 (33)656-09-29</a></p>");
+        $("#contacts_email").html("<p class=\"footer_info\"><strong class=\"bold-text-2\">email: </strong>" +
+            "<a href=\"mailto:diamondservice@mail.ru?subject=Diamond%20Service\" class=\"link-4\"> diamondservice@mail.ru</a></p>");
+        $("#footer_company_name").html("<div class=\"text-block-6\">Diamond service</div>");
+        $("#footer_company_info").html("<p class=\"paragraph-8\">Частное предприятие “Даймонд сервис”<br />УНП 591028679<br />р/c BY52 ALFA 3012 2372 2200 5027 0000</p>");
+
+        $("#footer_map").html("<script type=\"text/javascript\" charset=\"utf-8\" async src=\"https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A22fb25478e5de0ec2e57bb1ae2fb651bef8c1775a10adfdfa150c27572dd2289&amp;width=auto&amp;height=500&amp;lang=ru_RU&amp;scroll=true\"></script>");
+
+    } else if (cityName == "Брест") {
+        $("#address").html("<div class=\"div-block-3\">ул. Менжинского, д.30-29, пом. 29-8</div>");
+        $("#phones").html("<div id=\"phones\" class=\"text-block\"><a href=\"tel:+375298227002\" " +
+            "class=\"tel1 link\">+375(29) 822-70-02</a></div>");
+        $("#logo").html("<a href=\"index.html\" class=\"brand w-nav-brand w--current\"><img src=\"assets/img/5d4562f428d7ffd4cac9db95_logo_brest.svg\" alt=\"\"/></a>" +
+            "<div class=\"text-block-3\">Как для нас, так и для наших клиентов,<br />чистота – не пустой звук<br /></div>");
+
+        $("#header_viber").html("<a href=\"viber://add?number=+375447082118\" class=\"viber w-inline-block\">" +
+            "<img src=\"assets/img/5d4562f428d7ff39ebc9db94_viber.svg\" width=\"24\" height=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#header_whatsapp").html("<a href=\"whatsapp://send?phone=+375447082118\" class=\"whatsapp w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f452d293343ebe1558_whatsapp.svg\" width=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#header_instagram").html("<a href=\"https://www.instagram.com/cleaningnumber1/\" class=\"instagram w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f43502342a1239fd97_instagram.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#header_vk").html("<div width=\"20\" alt=\"\" class=\"img_soc_footer\"></div>");
+        $("#footer_viber").html("<a href=\"viber://add?number=+375447082118\" class=\"viber w-inline-block\">" +
+            "<img src=\"assets/img/5d4562f428d7ff39ebc9db94_viber.svg\" width=\"24\" height=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#footer_whatsapp").html("<a href=\"whatsapp://send?phone=+375447082118\" class=\"whatsapp w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f452d293343ebe1558_whatsapp.svg\" width=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#footer_instagram").html("<a href=\"https://www.instagram.com/cleaningnumber1/\" class=\"instagram w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f43502342a1239fd97_instagram.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+        $("#footer_vk").html("<div width=\"20\" alt=\"\" class=\"img_soc_footer\"></div>");
+
+        $("#contacts_company_name").html("<p class=\"footer_info\">Частное сервисное унитарное предприятие <strong>“ДМ Пром Групп”</strong></p>");
+        $("#contacts_address").html("<p class=\"footer_info\">г. Брест, ул. Менжинского 30-29, пом. 29-8</p>");
+        $("#contacts_phone").html("<p class=\"footer_info\">" +
+            "<strong class=\"bold-text\">тел. </strong> " +
+            "<a href=\"tel:+375298227002\" class=\"link-2\">+375(29) 822-70-02</a>");
+        $("#contacts_email").html("<p class=\"footer_info\"><strong class=\"bold-text-2\">email: </strong>" +
+            "<a href=\"mailto:cleaningnumber1@mail.ru?subject=Diamond%20Service\" class=\"link-4\"> cleaningnumber1@mail.ru</a></p>");
+        $("#footer_company_name").html("<div class=\"text-block-6\">Cleaning number one</div>");
+        $("#footer_company_info").html("<p class=\"paragraph-8\">Частное сервисное предприятие “ДМ Пром Групп”<br />УНП 291457918<br />р/c BY37 ALFA 3012 2468 0900 1027 0000</p>");
+
+        $("#footer_map").html("<script type=\"text/javascript\" charset=\"utf-8\" async src=\"https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b909df9560a36bd7ddedb49f0a6c7c51bbb1a7994566c1f9bb2633c1c423e83&amp;width=auto&amp;height=500&amp;lang=ru_RU&amp;scroll=true\"></script>");
+
+
+    }
+
+
+    $('#Cities').change(function() {
         if ($('#Cities option:selected').hasClass("Grodno")) {
             $("#address").html("<div class=\"div-block-3\">ул. Калючинская, д.12, пом.1</div>");
             $("#phones").html("<div id=\"phones\" class=\"text-block\"><a href=\"tel:+375336883877\" " +
                 "class=\"tel1 link\">+375(33) 688-38-77,</a>\n" +
                 "\t\t\t\t\t<a href=\"tel:+375336560929\" class=\"tel1\">+375(33) 656-09-29</a>\n" +
                 "\t\t\t\t</div>");
-            $("#logo").html("<a href=\"index.html\" class=\"brand w-nav-brand w--current\"><img src=\"assets/img/5d4562f428d7ffd4cac9db95_logo_grodno.svg\" alt=\"\"/></a>");
+            $("#logo").html("<a href=\"index.html\" class=\"brand w-nav-brand w--current\"><img src=\"assets/img/5d4562f428d7ffd4cac9db95_logo_grodno.svg\" alt=\"\"/></a>" +
+                "<div class=\"text-block-3\">Как для нас, так и для наших клиентов,<br />чистота – не пустой звук<br /></div>");
+
+            $("#header_viber").html("<a href=\"viber://add?number=+375336717285\" class=\"viber w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f428d7ff39ebc9db94_viber.svg\" width=\"24\" height=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#header_whatsapp").html("<a href=\"whatsapp://send?phone=+375336717285\" class=\"whatsapp w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f452d293343ebe1558_whatsapp.svg\" width=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#header_instagram").html("<a href=\"https://www.instagram.com/cleaningdream/\" class=\"instagram w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f43502342a1239fd97_instagram.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#header_vk").html("<a href=\"https://vk.com/id247111817\" class=\"vkontakte w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f4ac9dde382ee7ea32_vk.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#footer_viber").html("<a href=\"viber://add?number=+375336717285\" class=\"viber w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f428d7ff39ebc9db94_viber.svg\" width=\"24\" height=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#footer_whatsapp").html("<a href=\"whatsapp://send?phone=+375336717285\" class=\"whatsapp w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f452d293343ebe1558_whatsapp.svg\" width=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#footer_instagram").html("<a href=\"https://www.instagram.com/cleaningdream/\" class=\"instagram w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f43502342a1239fd97_instagram.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#footer_vk").html("<a href=\"https://vk.com/id247111817\" class=\"vkontakte w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f4ac9dde382ee7ea32_vk.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+
+
+            $("#contacts_company_name").html("<p class=\"footer_info\">Частное предприятие <strong>“Даймонд сервис”</strong></p>");
+            $("#contacts_address").html("<p class=\"footer_info\">г. Гродно, ул. Калючинская, д.12, пом.1</p>");
+            $("#contacts_phone").html("<p class=\"footer_info\">" +
+                "<strong class=\"bold-text\">тел. </strong> " +
+                "<a href=\"tel:+375336883877\" class=\"link-2\">+375 (33)688-38-77</a>, " +
+                "<a href=\"tel:+375336560929\" class=\"link-3\"> +375 (33)656-09-29</a></p>");
+            $("#contacts_email").html("<p class=\"footer_info\"><strong class=\"bold-text-2\">email: </strong>" +
+                "<a href=\"mailto:diamondservice@mail.ru?subject=Diamond%20Service\" class=\"link-4\"> diamondservice@mail.ru</a></p>");
+            $("#footer_company_name").html("<div class=\"text-block-6\">Diamond service</div>");
+            $("#footer_company_info").html("<p class=\"paragraph-8\">Частное предприятие “Даймонд сервис”<br />УНП 591028679<br />р/c BY52 ALFA 3012 2372 2200 5027 0000</p>");
+
+            $("#footer_map").html("<script type=\"text/javascript\" charset=\"utf-8\" async src=\"https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A22fb25478e5de0ec2e57bb1ae2fb651bef8c1775a10adfdfa150c27572dd2289&amp;width=auto&amp;height=500&amp;lang=ru_RU&amp;scroll=true\"></script>");
+
+
+
         } else if ($("#Cities option:selected").hasClass("Brest")) {
             $("#address").html("<div class=\"div-block-3\">ул. Менжинского, д.30-29, пом. 29-8</div>");
             $("#phones").html("<div id=\"phones\" class=\"text-block\"><a href=\"tel:+375298227002\" " +
                 "class=\"tel1 link\">+375(29) 822-70-02</a></div>");
-            $("#logo").html("<a href=\"index.html\" class=\"brand w-nav-brand w--current\"><img src=\"assets/img/5d4562f428d7ffd4cac9db95_logo_brest.svg\" alt=\"\"/></a>");
+            $("#logo").html("<a href=\"index.html\" class=\"brand w-nav-brand w--current\"><img src=\"assets/img/5d4562f428d7ffd4cac9db95_logo_brest.svg\" alt=\"\"/></a>" +
+                "<div class=\"text-block-3\">Как для нас, так и для наших клиентов,<br />чистота – не пустой звук<br /></div>");
+
+            $("#header_viber").html("<a href=\"viber://add?number=+375447082118\" class=\"viber w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f428d7ff39ebc9db94_viber.svg\" width=\"24\" height=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#header_whatsapp").html("<a href=\"whatsapp://send?phone=+375447082118\" class=\"whatsapp w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f452d293343ebe1558_whatsapp.svg\" width=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#header_instagram").html("<a href=\"https://www.instagram.com/cleaningnumber1/\" class=\"instagram w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f43502342a1239fd97_instagram.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#header_vk").html("<div width=\"20\" alt=\"\" class=\"img_soc_footer\"></div>");
+            $("#footer_viber").html("<a href=\"viber://add?number=+375447082118\" class=\"viber w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f428d7ff39ebc9db94_viber.svg\" width=\"24\" height=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#footer_whatsapp").html("<a href=\"whatsapp://send?phone=+375447082118\" class=\"whatsapp w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f452d293343ebe1558_whatsapp.svg\" width=\"24\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#footer_instagram").html("<a href=\"https://www.instagram.com/cleaningnumber1/\" class=\"instagram w-inline-block\">" +
+                "<img src=\"assets/img/5d4562f43502342a1239fd97_instagram.svg\" width=\"20\" alt=\"\" class=\"img_soc_footer\" />");
+            $("#footer_vk").html("<div width=\"20\" alt=\"\" class=\"img_soc_footer\"></div>");
+
+
+            $("#contacts_company_name").html("<p class=\"footer_info\">Частное сервисное унитарное предприятие <strong>“ДМ Пром Групп”</strong></p>");
+            $("#contacts_address").html("<p class=\"footer_info\">г. Брест, ул. Менжинского 30-29, пом. 29-8</p>");
+            $("#contacts_phone").html("<p class=\"footer_info\">" +
+                "<strong class=\"bold-text\">тел. </strong> " +
+                "<a href=\"tel:+375298227002\" class=\"link-2\">+375(29) 822-70-02</a>");
+            $("#contacts_email").html("<p class=\"footer_info\"><strong class=\"bold-text-2\">email: </strong>" +
+                "<a href=\"mailto:cleaningnumber1@mail.ru?subject=Diamond%20Service\" class=\"link-4\"> cleaningnumber1@mail.ru</a></p>");
+            $("#footer_company_name").html("<div class=\"text-block-6\">Cleaning number one</div>");
+            $("#footer_company_info").html("<p class=\"paragraph-8\">Частное сервисное предприятие “ДМ Пром Групп”<br />УНП 291457918<br />р/c BY37 ALFA 3012 2468 0900 1027 0000</p>");
+
+            $("#footer_map").html("<script type=\"text/javascript\" charset=\"utf-8\" async src=\"https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3b909df9560a36bd7ddedb49f0a6c7c51bbb1a7994566c1f9bb2633c1c423e83&amp;width=auto&amp;height=500&amp;lang=ru_RU&amp;scroll=true\"></script>");
+
         }
     });
 });
+
 
 /**
 * @preserve HTML5 Shiv 3.7.3 | @afarkas @jdalton @jon_neal @rem | MIT/GPL2 Licensed
