@@ -25,8 +25,14 @@
 		<div class="modal_box">
 			<div class="div-block-51" data-ix="modal-contact-fade-out"></div>
 			<div class="form-block w-form">
-				<form method="get" action="/" class="form-2">
+				<form action="/" class="form-2">
 					<label for="node" class="field-label">Заполните форму и мы перезвоним Вам</label>
+
+					<!-- Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Cleaning">
+					<input type="hidden" name="admin_email" value="forlechat@gmail.com">
+					<input type="hidden" name="form_subject" value="Заявка с сайта Cleaning">
+
 					<input type="text" autofocus="true" maxlength="256" data-name="Имя" placeholder="Имя" id="node" class="text-field w-input" />
 					<input type="tel" class="text-field-2 w-input" maxlength="256" data-name="Телефон" placeholder="Телефон" id="node-2" required="" />
 					<input type="submit" value="Оставить заявку" data-wait="Please wait..." class="submit-button w-button" />
