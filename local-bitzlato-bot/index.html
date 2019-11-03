@@ -26,22 +26,22 @@
 						<div class="div-block-5">
 							<div class="div-block">
 								<label for="lb_hmac_key" class="field-label">Hmac key</label>
-								<input type="password" class="text-field input" maxlength="256" name="lb_hmac_key" id="lb_hmac_key" required="" />
+								<input type="password" class="text-field input" maxlength="256" name="lb_hmac_key" id="lb_hmac_key" required="" onkeypress="validate(event)" />
 							</div>
 							<div class="div-block">
 								<label for="lb_hmac_secret" class="field-label">Hmac secret</label>
-								<input type="password" class="text-field input" maxlength="256" name="lb_hmac_secret" id="lb_hmac_secret" required="" />
+								<input type="password" class="text-field input" maxlength="256" name="lb_hmac_secret" id="lb_hmac_secret" required="" onkeypress="validate(event)" />
 							</div>
 						</div>
 						<div class="div-block-2">
 							<label class="field-label-2">Вкладка &quot;Купить биткоины&quot;</label>
 							<div class="div-block">
 								<label for="lb_min_sell_price" class="field-label-3">Минимальная цена, по которой я согласен продать</label>
-								<input type="number" class="text-field-2 input" maxlength="256" name="lb_min_sell_price" id="lb_min_sell_price" required="" />
+								<input type="number" class="text-field-2 input" maxlength="256" name="lb_min_sell_price" id="lb_min_sell_price" required="" onkeypress="validate(event)" />
 							</div>
 							<div class="div-block">
 								<label for="lb_sell_step" class="field-label-3">Шаг изменения цены</label>
-								<input type="number" class="text-field-2 input" maxlength="256" name="lb_sell_step" id="lb_sell_step" required="" />
+								<input type="number" class="text-field-2 input" maxlength="256" name="lb_sell_step" id="lb_sell_step" required="" onkeypress="validate(event)" />
 							</div>
 							<div class="div-block mob">
 								<label for="lb_sellers_black_list" class="field-label-3">Чёрный список продавцов</label>
@@ -58,11 +58,11 @@
 							<label class="field-label-2">Вкладка &quot;Продать биткоины&quot;</label>
 							<div class="div-block">
 								<label for="lb_max_buy_price" class="field-label-3">Максимальная цена, по которой я согласен купить</label>
-								<input type="number" class="text-field-2 input" maxlength="256" name="lb_max_buy_price" id="lb_max_buy_price" required="" />
+								<input type="number" class="text-field-2 input" maxlength="256" name="lb_max_buy_price" id="lb_max_buy_price" required="" onkeypress="validate(event)" />
 							</div>
 							<div class="div-block">
 								<label for="lb_buy_step" class="field-label-3">Шаг изменения цены</label>
-								<input type="number" class="text-field-2 input" maxlength="256" name="lb_buy_step" id="lb_buy_step" required="" />
+								<input type="number" class="text-field-2 input" maxlength="256" name="lb_buy_step" id="lb_buy_step" required="" onkeypress="validate(event)" />
 							</div>
 							<div class="div-block mob">
 								<label for="lb_buyers_black_list" class="field-label-3">Чёрный список покупателей</label>
