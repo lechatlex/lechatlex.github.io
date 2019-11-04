@@ -1,3 +1,10 @@
+// Page scroll top
+function PageScrollTop() {
+    jQuery("html").animate({ scrollTop: 0 }, "fast");
+}
+
+
+
 // Click on the corresponding id after reloading the page
 $(document).ready(function() {
     if ( window.location.hash ) {
@@ -7,6 +14,8 @@ $(document).ready(function() {
     else{
         document.getElementById('localbitcoins').click();
     }
+    // Page scroll top
+    PageScrollTop();
 });
 
 
@@ -36,13 +45,13 @@ function openContent(evt, tabName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
-  // Get all elements with class="tabcontent" and hide them
+  // Get all elements with class="tab_pane" and hide them
   tabcontent = document.getElementsByClassName("tab_pane");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  // Get all elements with class="tablinks" and remove the class "active"
+  // Get all elements with class="tab_title inline-block tab-link" and remove the class "active"
   tablinks = document.getElementsByClassName("tab_title inline-block tab-link");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active_tab", "");
@@ -51,4 +60,39 @@ function openContent(evt, tabName) {
   // Show the current tab, and add an "active_tab" class to the button that opened the tab
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.className += " active_tab";
+  // Page scroll top
+  PageScrollTop();
 }
+
+
+
+// Clone form
+$('.clone_form_button').click(function() {
+    var first_form = $('form:first');
+    var clone = first_form.clone();
+
+
+    clone.prop('name', '45');
+
+
+
+    clone.appendTo('.form-block');
+
+    // Add remove button to child form
+
+    // Add unique id to child form
+    var remove_btns = document.getElementsByClassName('remove_form_button');
+    var last_remove_btn = remove_btns[remove_btns.length-1];
+    last_remove_btn.id = "child_form_" + remove_btns.length;
+});
+
+
+
+
+// Delete form
+$(document).click(function(event) {
+    var remove_form_id = $(event.target).attr('id');
+    if ( remove_form_id ) {
+       document.getElementById(remove_form_id).closest('form').remove();
+    }
+});

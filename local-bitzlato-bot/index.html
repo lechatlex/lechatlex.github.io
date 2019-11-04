@@ -21,9 +21,12 @@
 				</a>
 			</div>
 			<div id="localbitcoins_content" class="tab_content tab_pane">
+				<div class="div-block-6">
+					<a class="clone_form_button">Добавить аккаунт</a>
+				</div>
 				<div class="form-block">
-					<form id="localbitcoins_form" name="localbitcoins_form" class="form">
-						<div class="div-block-5">
+					<form name="localbitcoins_form" class="lb_main_form">
+						<div class="lb_block_form_main">
 							<div class="div-block">
 								<label for="lb_hmac_key" class="field-label">Hmac key</label>
 								<input type="password" class="text-field input" maxlength="256" name="lb_hmac_key" id="lb_hmac_key" required="" />
@@ -74,12 +77,12 @@
 									<a id="lb_remove_buyer_from_black_list" class="button">Удалить</a>
 								</div>
 							</div>
-						</div><input type="submit" value="Запустить ротацию" id="lb_start_bot" class="submit-button" />
+							<div class="div-block-6">
+								<a class="remove_form_button">Удалить аккаунт</a>
+								<input type="submit" value="Запустить ротацию" id="lb_start_bot" class="submit-button" />
+							</div>
+						</div>
 					</form>
-					<div class="div-block-6">
-						<a id="lb_add_account" class="button-2 button">Добавить аккаунт</a>
-						<a id="lb_remove_account" class="button-3 button">Удалить аккаунт</a>
-					</div>
 				</div>
 			</div>
 

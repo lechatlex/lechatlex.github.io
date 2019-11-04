@@ -453,8 +453,8 @@ input[type="reset"] {
 	-webkit-appearance: button
 }
 
-.form {
-	margin: 0 0 15px
+.lb_main_form {
+	margin: 0 0 80px;
 }
 
 label {
@@ -2164,6 +2164,7 @@ textarea.select {
 	font-size: 18px;
 	font-weight: 600;
 	text-align: center;
+	border-radius: 4px;
 }
 
 .tab_title.active_tab {
@@ -2199,8 +2200,6 @@ textarea.select {
 .submit-button {
 	display: block;
 	width: 160px;
-	margin-top: 20px;
-	margin-right: auto;
 	margin-left: auto;
 	padding: 9px 15px;
     background-color: #3898EC;
@@ -2209,10 +2208,10 @@ textarea.select {
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 4px;
 }
 
-.form {
+.lb_main_form {
 	max-width: 700px;
 	padding-bottom: 10px;
 	border-style: solid;
@@ -2234,7 +2233,8 @@ textarea.select {
 	display: inline-block;
 	width: 82%;
 	height: 100%;
-	margin-bottom: 0px;
+	margin-bottom: 0;
+	border-radius: 4px;
 }
 
 .field-label-2 {
@@ -2259,6 +2259,7 @@ textarea.select {
 	height: 100%;
 	margin-bottom: 0px;
 	margin-left: auto;
+	border-radius: 4px;
 }
 
 .div-block {
@@ -2293,6 +2294,7 @@ textarea.select {
 	height: 100%;
 	margin-bottom: 0px;
 	padding: 0px 2px;
+	border-radius: 4px;
 }
 
 .button {
@@ -2313,6 +2315,7 @@ textarea.select {
 	-webkit-align-items: center;
 	-ms-flex-align: center;
 	align-items: center;
+	border-radius: 4px;
 }
 
 .div-block-2 {
@@ -2336,7 +2339,7 @@ textarea.select {
 	align-items: center;
 }
 
-.div-block-5 {
+.lb_block_form_main {
 	margin-bottom: 0px;
 	padding: 10px;
 }
@@ -2351,27 +2354,29 @@ textarea.select {
 	-webkit-justify-content: center;
 	-ms-flex-pack: center;
 	justify-content: center;
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
-.button-2 {
+.clone_form_button {
 	width: 150px;
-	margin: 0px 20px;
-	background-color: teal;
+	background-color:
+	teal;
 	text-align: center;
 	display: inline-block;
-    padding: 9px 15px;
-    color: white;
+	padding: 9px 15px;
+	color: white;
     border: 0;
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 4px;
+    margin-right: auto;
 }
 
-.button-3 {
+.remove_form_button {
 	width: 150px;
-	margin-right: 20px;
-	margin-left: 20px;
 	background-color: red;
 	text-align: center;
 	display: inline-block;
@@ -2381,11 +2386,11 @@ textarea.select {
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
-    border-radius: 0;
+    border-radius: 4px;
 }
 
 @media (max-width: 767px) {
-	.form {
+	.lb_main_form {
 		padding-right: 10px;
 		padding-left: 10px;
 	}
@@ -2528,7 +2533,7 @@ textarea.select {
 		align-items: center;
 	}
 
-	.button-2 {
+	.clone_form_button {
 		width: 150px;
 		margin-bottom: 10px;
 	}
