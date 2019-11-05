@@ -2199,9 +2199,9 @@ textarea.select {
 
 .submit-button {
 	display: block;
-	width: 160px;
+	width: 140px;
 	margin-left: auto;
-	padding: 9px 15px;
+	padding: 9px 6px;
     background-color: #3898EC;
     color: white;
     border: 0;
@@ -2376,17 +2376,18 @@ textarea.select {
 }
 
 .remove_form_button {
-	width: 150px;
+	width: 140px;
 	background-color: red;
 	text-align: center;
 	display: inline-block;
-    padding: 9px 15px;
+    padding: 9px 6px;
     color: white;
     border: 0;
     line-height: inherit;
     text-decoration: none;
     cursor: pointer;
     border-radius: 4px;
+	margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
@@ -2535,6 +2536,6 @@ textarea.select {
 
 	.clone_form_button {
 		width: 150px;
-		margin-bottom: 10px;
+		margin-right: 0;
 	}
 }
