@@ -1,0 +1,266 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.75
+	font-family: $default-font
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+section, header
+	position: relative
+	background-size: cover
+	background-position: center
+
+ul, li
+	margin: 0
+	padding: 0
+
+.accent_text
+	color: $accent
+
+.site-header
+	min-height: 450px
+	// height: 50vh
+	background-color: $dark
+	background-size: cover
+	background-position: center
+	top: 0
+
+#my-menu
+	display: none
+
+.hamburger
+	display: none
+	padding: 9px 8px 8px 8px
+	position: absolute
+	z-index: 3
+	margin-top: -6px
+	margin-left: 5px
+
+.hamburger-inner, 
+.hamburger-inner::after, 
+.hamburger-inner::before,
+	background-color: #fff
+	width: 26px
+	height: 2px
+	margin-bottom: 4px
+	margin-top: 4px
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::after,
+.hamburger.is-active .hamburger-inner::before
+	display: none
+
+.mm-navbar 
+	top: 5px
+	height: 37px
+	border-bottom-width: 2px
+	a:not([href]):not([tabindex])
+		font-size: 20px
+		color: $accent
+	.mm-navbar__title
+		padding: 0
+		text-align: center
+		img
+			margin-right: 5px
+			width: 42px
+
+.mm-listview
+	font-size: 20px
+	margin-top: 0 !important
+	& a
+		color: #fff
+		&:hover
+			color: $accent
+
+.top-line
+	background-color: rgba(#19130E, .9)
+	position: fixed
+	top: 0
+	border-bottom: 2px solid rgba(#19130E, .5)
+	width: 100%
+	z-index: 2
+	& .fa-phone-volume
+		margin-bottom: -5px
+
+.logo 
+	display: inline-block
+	margin-right: 60px
+	margin-left: -10px
+	img
+		margin-top: -8px
+		width: 230px
+
+.main_menu
+	display: inline-block
+	ul:last-child
+		margin-right: 60px
+	li
+		display: inline-block
+		margin-right: 34px
+		a
+			color: #fff
+			text-decoration: underline
+			font-size: 24px
+			&:hover
+				color: $accent
+				text-decoration: none
+
+.call_back
+	display: inline-block
+	.fa-phone-volume
+		font-size: 36px
+		margin-right: 10px
+		color: $accent
+	a
+		color: $accent
+		font-size: 24px
+		&:hover
+			color: #fff
+			text-decoration: none
+			.fa-phone-volume
+				transform: rotate(-15deg)
+
+#my-content > div:nth-child(1) .cont_title_text
+	color: #000
+	text-decoration: none
+
+.cont_title_text
+	color: $accent
+	font-size: 36px
+	margin-top: 6px
+	margin-bottom: 20px
+	text-decoration: underline
+
+.header-text
+	position: absolute
+	margin-top: 130px
+	li
+		font-size: 30px
+		color: #fff
+		list-style: none
+		font-family: "RobotoCondensedRegular", sans-serif
+
+#my-content
+	background-color: #E9E9E9
+
+.cont_pictures
+	margin-bottom: 30px
+	ul
+		text-align: center
+	li
+		vertical-align: top
+		display: inline-block
+		list-style-type: none
+		line-height: 1.2
+		text-align: center
+		width: 162px
+		margin-right: 24px
+		letter-spacing: 0.5px
+		font-size: 18px
+		font-weight: 500
+.font_circle
+	background-color: $accent
+	border-radius: 10em
+	height: 100px
+	width: 100px
+	line-height: 124px
+	text-align: center
+	margin: auto
+	box-shadow: 0.2em 0.2em 5px rgba(122,122,122,.5)
+	margin-bottom: 10px
+	.fa-phone
+		transform: rotate(90deg)
+	svg
+		font-size: 50px
+		color: #fff
+
+.cont_paragraphes
+	font-family: "RobotoLight", sans-serif
+	color: #fff
+	font-size: 18px
+	line-height: 20px
+
+.cont_background
+	background-size: cover
+	.cont_title_text
+		margin-bottom: 8px
+
+.cont_list
+	li
+		font-family: "RobotoCondensedRegular", sans-serif
+		list-style-type: none
+		color: #fff
+		font-size: 30px
+		line-height: 10px
+		margin-bottom: 30px
+		svg
+			color: #f17b24
+
+.bgc_white
+	background-color: #fff
+
+.carousel_wrap
+	margin-bottom: 40px
+
+.carousel_item
+	img
+		display: block
+		width: 100%
+		height: auto
+
+.carousel_item
+	opacity: 0.7
+	transition: opacity 0.5s ease
+	// min-height: 300px
+	&:hover
+		opacity: 1
+
+.owl-prev.disabled, .owl-next.disabled
+	display: none
+
+.owl-nav
+	.owl-next
+		right: 10px
+		// background-position: top right
+		background-image: url('../img/list_right_orange.svg')
+		background-size: cover
+	.owl-prev
+		left: 10px
+		background-image: url('../img/list_left_orange.svg')
+		background-size: cover
+.owl-nav 
+	div
+		width: 30px
+		height: 30px
+		top: 120px
+		position: absolute
+
+.site_footer
+	background-repeat: round
+	border-bottom: 5px solid #fff
+	.font_circle
+		box-shadow: none
+	li
+		display: inline-block
+		vertical-align: top
+		text-align: center
+		list-style-type: none
+		margin: 20px 154px 20px 0
+		font-size: 24px
+		line-height: 1.1
+		color: #fff
+		&:last-child
+			margin-right: 0
+
+@import "media" // Always at the end
