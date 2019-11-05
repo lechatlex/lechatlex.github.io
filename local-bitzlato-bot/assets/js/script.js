@@ -70,20 +70,18 @@ function openContent(evt, tabName) {
 $('.clone_form_button').click(function() {
     var first_form = $('form:first');
     var clone = first_form.clone();
+    var main_forms_quantity = document.getElementsByClassName('lb_main_form').length + 1;
 
-
-    clone.prop('name', '45');
-
-
-
+    // Add unique id and name to child form
+    clone.prop('name', clone.attr('name') + "_" + main_forms_quantity);
     clone.appendTo('.form-block');
 
     // Add remove button to child form
+    var remove_btn_id = "child_form_" + main_forms_quantity;
+    $('.div-block-6:last').prepend(`<a id="${remove_btn_id}"  class="remove_form_button">Удалить аккаунт</a>`);
 
-    // Add unique id to child form
-    var remove_btns = document.getElementsByClassName('remove_form_button');
-    var last_remove_btn = remove_btns[remove_btns.length-1];
-    last_remove_btn.id = "child_form_" + remove_btns.length;
+    // // Clear Hmac and secret
+    // $('#lb_hmac_key:last').blur();
 });
 
 
@@ -92,7 +90,7 @@ $('.clone_form_button').click(function() {
 // Delete form
 $(document).click(function(event) {
     var remove_form_id = $(event.target).attr('id');
-    if ( remove_form_id ) {
+    if ( remove_form_id && remove_form_id.includes('child_form_') ) {
        document.getElementById(remove_form_id).closest('form').remove();
     }
 });
