@@ -2196,7 +2196,7 @@ textarea.select {
 }
 
 .form-block {
-	max-width: 1000px;
+	min-width: 1000px;
 	margin-top: 20px;
 	margin-right: auto;
 	margin-left: auto;
