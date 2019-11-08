@@ -27,6 +27,8 @@
 				<div class="form-block">
 					<form name="localbitcoins_form" class="lb_main_form">
 						<div class="lb_block_form_main">
+							<details>
+							<summary class="spoiler">Авторизационные данные</summary>
 							<div class="div-block">
 								<label for="lb_hmac_key" class="field-label">Hmac key</label>
 								<input type="password" class="text-field input" maxlength="256" name="lb_hmac_key" id="lb_hmac_key" required="" />
@@ -35,50 +37,131 @@
 								<label for="lb_hmac_secret" class="field-label">Hmac secret</label>
 								<input type="password" class="text-field input" maxlength="256" name="lb_hmac_secret" id="lb_hmac_secret" required="" />
 							</div>
+							</details>
 						</div>
 						<div class="div-block-2">
-							<label class="field-label-2">Вкладка &quot;Купить биткоины&quot;</label>
-							<div class="div-block">
-								<label for="lb_min_sell_price" class="field-label-3">Минимальная цена, по которой я согласен продать</label>
-								<input type="number" class="text-field-2 input" maxlength="256" name="lb_min_sell_price" id="lb_min_sell_price" required="" onkeypress="validate(event)" />
+							<label class="field-label-2">Купить</label>
+
+
+							<div class="div-block mob title">
+								<div class="text-block">Активно</div>
+								<div class="text-block">Способ<br />оплаты</div>
+								<div class="text-block">Цена</div>
+								<div class="text-block">Ограничения</div>
+								<div class="text-block">Лимит</div>
+								<div class="text-block">Шаг</div>
+								<div class="text-block">Исключения</div>
+								<div class="text-block">Автоответчик</div>
+								<div class="text-block">Обновление, сек</div>
 							</div>
-							<div class="div-block">
-								<label for="lb_sell_step" class="field-label-3">Шаг изменения цены</label>
-								<input type="number" class="text-field-2 input" maxlength="256" name="lb_sell_step" id="lb_sell_step" required="" onkeypress="validate(event)" />
+							<div class="div-block mob title">
+								<div class="text-block">Да</div>
+								<div class="text-block">ЕРИП</div>
+								<div class="text-block">20000 BYN</div>
+								<div class="text-block">5 - 1,604 BYN</div>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
+								<select name="lb_sellers_black_list-2" class="select-field text-block w-select">
+									<option value="">Продавец</option>
+								</select>
+								<input type="text" class="text-block w-input" maxlength="256" name="field"/>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
 							</div>
-							<div class="div-block mob">
-								<label for="lb_sellers_black_list" class="field-label-3">Чёрный список продавцов</label>
-								<div class="div-block-4">
-									<select id="lb_sellers_black_list" name="lb_sellers_black_list" class="select-field select">
-										<option value="">Выберите продавца</option>
-									</select>
-									<a id="lb_add_seller_in_black_list" class="button">Добавить</a>
-									<a id="lb_remove_seller_from_black_list" class="button">Удалить</a>
-								</div>
+							<div class="div-block mob title">
+								<div class="text-block">Да</div>
+								<div class="text-block">Любой банк</div>
+								<div class="text-block">9073,27 USD</div>
+								<div class="text-block">100 - 1,136 USD</div>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
+								<select name="lb_sellers_black_list-2" class="select-field text-block w-select">
+									<option value="">Продавец</option>
+								</select>
+								<input type="text" class="text-block w-input" maxlength="256" name="field-5" />
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
 							</div>
+							<!--<div class="div-block">-->
+								<!--<label for="lb_min_sell_price" class="field-label-3">Минимальная цена продажи</label>-->
+								<!--<input type="number" class="text-field-2 input" maxlength="256" name="lb_min_sell_price" id="lb_min_sell_price" required="" onkeypress="validate(event)" />-->
+							<!--</div>-->
+							<!--<div class="div-block">-->
+								<!--<label for="lb_sell_step" class="field-label-3">Шаг</label>-->
+								<!--<input type="number" class="text-field-2 input" maxlength="256" name="lb_sell_step" id="lb_sell_step" required="" onkeypress="validate(event)" />-->
+							<!--</div>-->
+							<!--<div class="div-block mob">-->
+								<!--<label for="lb_sellers_black_list" class="field-label-3">Исключения</label>-->
+								<!--<div class="div-block-4">-->
+									<!--<select id="lb_sellers_black_list" name="lb_sellers_black_list" class="select-field select">-->
+										<!--<option value="">Выберите продавца</option>-->
+									<!--</select>-->
+									<!--<a id="lb_add_seller_in_black_list" class="button">Добавить</a>-->
+									<!--<a id="lb_remove_seller_from_black_list" class="button">Удалить</a>-->
+								<!--</div>-->
+							<!--</div>-->
 						</div>
 						<div class="div-block-2">
-							<label class="field-label-2">Вкладка &quot;Продать биткоины&quot;</label>
-							<div class="div-block">
-								<label for="lb_max_buy_price" class="field-label-3">Максимальная цена, по которой я согласен купить</label>
-								<input type="number" class="text-field-2 input" maxlength="256" name="lb_max_buy_price" id="lb_max_buy_price" required="" onkeypress="validate(event)" />
+							<label class="field-label-2">Продать</label>
+
+							<div class="div-block mob title">
+								<div class="text-block">Активно</div>
+								<div class="text-block">Способ<br />оплаты</div>
+								<div class="text-block">Цена</div>
+								<div class="text-block">Ограничения</div>
+								<div class="text-block">Лимит</div>
+								<div class="text-block">Шаг</div>
+								<div class="text-block">Исключения</div>
+								<div class="text-block">Автоответчик</div>
+								<div class="text-block">Обновление, сек</div>
 							</div>
-							<div class="div-block">
-								<label for="lb_buy_step" class="field-label-3">Шаг изменения цены</label>
-								<input type="number" class="text-field-2 input" maxlength="256" name="lb_buy_step" id="lb_buy_step" required="" onkeypress="validate(event)" />
+							<div class="div-block mob title">
+								<div class="text-block">Да</div>
+								<div class="text-block">Western Union</div>
+								<div class="text-block">17,712.13 BYN</div>
+								<div class="text-block">1000 - 50000 BYN</div>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
+								<select name="lb_sellers_black_list-2" class="select-field text-block w-select">
+									<option value="">Покупатель</option>
+								</select>
+								<input type="text" class="text-block w-input" maxlength="256" name="field"/>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
 							</div>
-							<div class="div-block mob">
-								<label for="lb_buyers_black_list" class="field-label-3">Чёрный список покупателей</label>
-								<div class="div-block-4">
-									<select id="lb_buyers_black_list" name="lb_buyers_black_list" class="select-field select">
-										<option value="">Выберите покупателя</option>
-									</select>
-									<a id="lb_add_buyer_in_black_list" class="button">Добавить</a>
-									<a id="lb_remove_buyer_from_black_list" class="button">Удалить</a>
-								</div>
+							<div class="div-block mob title">
+								<div class="text-block">Да</div>
+								<div class="text-block">Paypal</div>
+								<div class="text-block">8980 USD</div>
+								<div class="text-block">20 - 402 USD</div>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
+								<select name="lb_sellers_black_list-2" class="select-field text-block w-select">
+									<option value="">Покупатель</option>
+								</select>
+								<input type="text" class="text-block w-input" maxlength="256" name="field-5" />
+								<input type="number" class="text-block w-input" maxlength="256" name="lb_min_sell_price-4"/>
 							</div>
+
+							<!--<div class="div-block">-->
+								<!--<label for="lb_max_buy_price" class="field-label-3">Максимальная цена покупки</label>-->
+								<!--<input type="number" class="text-field-2 input" maxlength="256" name="lb_max_buy_price" id="lb_max_buy_price" required="" onkeypress="validate(event)" />-->
+							<!--</div>-->
+							<!--<div class="div-block">-->
+								<!--<label for="lb_buy_step" class="field-label-3">Шаг</label>-->
+								<!--<input type="number" class="text-field-2 input" maxlength="256" name="lb_buy_step" id="lb_buy_step" required="" onkeypress="validate(event)" />-->
+							<!--</div>-->
+							<!--<div class="div-block mob">-->
+								<!--<label for="lb_buyers_black_list" class="field-label-3">Исключения</label>-->
+								<!--<div class="div-block-4">-->
+									<!--<select id="lb_buyers_black_list" name="lb_buyers_black_list" class="select-field select">-->
+										<!--<option value="">Выберите покупателя</option>-->
+									<!--</select>-->
+									<!--<a id="lb_add_buyer_in_black_list" class="button">Добавить</a>-->
+									<!--<a id="lb_remove_buyer_from_black_list" class="button">Удалить</a>-->
+								<!--</div>-->
+							<!--</div>-->
 							<div class="div-block-6">
+								<input type="submit" value="Сохранить изменения" class="submit-button" />
 								<input type="submit" value="Запустить ротацию" id="lb_start_bot" class="submit-button" />
+
 							</div>
 						</div>
 					</form>
@@ -95,4 +178,3 @@
 </body>
 
 </html>
-
