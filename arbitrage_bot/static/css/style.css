@@ -1,12 +1,7 @@
-/* Generated on: Wed Aug 28 2019 13:03:34 GMT+0000 (UTC) */
-/* ==========================================================================
-   normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
-   ========================================================================== */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -345,7 +340,7 @@ th {
 }
 
 /* ==========================================================================
-   Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
+   Start of base CSS
    ========================================================================== */
 @font-face {
   font-family: 'webflow-icons';
@@ -427,7 +422,7 @@ html.w-mod-touch * {
   display: block
 }
 
-.w-inline-block {
+.tab_inline_block {
   max-width: 100%;
   display: inline-block
 }
@@ -450,7 +445,7 @@ html.w-mod-touch * {
   display: none
 }
 
-.w-button {
+.form_button {
   display: inline-block;
   padding: 9px 15px;
   background-color: #3898EC;
@@ -462,7 +457,7 @@ html.w-mod-touch * {
   border-radius: 0
 }
 
-input.w-button {
+input.form_button {
   -webkit-appearance: button
 }
 
@@ -692,18 +687,18 @@ input[type="reset"] {
   -webkit-appearance: button
 }
 
-.w-form {
+.tab_form {
   margin: 0 0 15px
 }
 
-.w-form-done {
+.tab_form-done {
   display: none;
   padding: 20px;
   text-align: center;
   background-color: #dddddd
 }
 
-.w-form-fail {
+.tab_form-fail {
   display: none;
   margin-top: 10px;
   padding: 10px;
@@ -716,12 +711,12 @@ label {
   font-weight: bold
 }
 
-.w-input,
+.field_input,
 .w-select {
   display: block;
   width: 100%;
   height: 38px;
-  padding: 8px 12px;
+  /*padding: 8px 12px;*/
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -731,44 +726,44 @@ label {
   border: 1px solid #cccccc
 }
 
-.w-input:-moz-placeholder,
+.field_input:-moz-placeholder,
 .w-select:-moz-placeholder {
   color: #999
 }
 
-.w-input::-moz-placeholder,
+.field_input::-moz-placeholder,
 .w-select::-moz-placeholder {
   color: #999;
   opacity: 1
 }
 
-.w-input:-ms-input-placeholder,
+.field_input:-ms-input-placeholder,
 .w-select:-ms-input-placeholder {
   color: #999
 }
 
-.w-input::-webkit-input-placeholder,
+.field_input::-webkit-input-placeholder,
 .w-select::-webkit-input-placeholder {
   color: #999
 }
 
-.w-input:focus,
+.field_input:focus,
 .w-select:focus {
   border-color: #3898EC;
   outline: 0
 }
 
-.w-input[disabled],
+.field_input[disabled],
 .w-select[disabled],
-.w-input[readonly],
+.field_input[readonly],
 .w-select[readonly],
-fieldset[disabled] .w-input,
+fieldset[disabled] .field_input,
 fieldset[disabled] .w-select {
   cursor: not-allowed;
   background-color: #eeeeee
 }
 
-textarea.w-input,
+textarea.field_input,
 textarea.w-select {
   height: auto
 }
@@ -781,7 +776,7 @@ textarea.w-select {
   height: auto
 }
 
-.w-form-label {
+.tab_form-label {
   display: inline-block;
   cursor: pointer;
   font-weight: normal;
@@ -1649,7 +1644,7 @@ textarea.w-select {
   color: #222222
 }
 
-.w-dropdown-link.w--current {
+.w-dropdown-link.active_tab {
   color: #0082f3
 }
 
@@ -2187,7 +2182,7 @@ textarea.w-select {
   margin-right: auto
 }
 
-.w-nav-link.w--current {
+.w-nav-link.active_tab {
   color: #0082f3
 }
 
@@ -2311,12 +2306,12 @@ textarea.w-select {
   }
 }
 
-.w-tabs {
+.page_tabs {
   position: relative
 }
 
-.w-tabs:before,
-.w-tabs:after {
+.page_tabs:before,
+.page_tabs:after {
   content: " ";
   display: table;
   grid-column-start: 1;
@@ -2325,15 +2320,15 @@ textarea.w-select {
   grid-row-end: 2
 }
 
-.w-tabs:after {
+.page_tabs:after {
   clear: both
 }
 
-.w-tab-menu {
+.page_tab_menu {
   position: relative
 }
 
-.w-tab-link {
+.tab_link {
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -2345,27 +2340,27 @@ textarea.w-select {
   background-color: #dddddd
 }
 
-.w-tab-link.w--current {
+.tab_link.active_tab {
   background-color: #C8C8C8
 }
 
-.w-tab-content {
+.page_tab_content {
   position: relative;
   display: block;
   overflow: hidden
 }
 
-.w-tab-pane {
+.tab_pane {
   position: relative;
   display: none
 }
 
-.w--tab-active {
+.tab_active {
   display: block
 }
 
 @media screen and (max-width:479px) {
-  .w-tab-link {
+  .tab_link {
     display: block
   }
 }
@@ -2400,13 +2395,13 @@ textarea.w-select {
 /* ==========================================================================
    Start of custom Webflow CSS
    ========================================================================== */
-.w-checkbox {
+.coin_checkbox {
   display: block;
   margin-bottom: 5px;
   padding-left: 20px;
 }
 
-.w-checkbox:before {
+.coin_checkbox:before {
   content: ' ';
   display: table;
   -ms-grid-column-span: 1;
@@ -2419,7 +2414,7 @@ textarea.w-select {
   grid-row-start: 1;
 }
 
-.w-checkbox:after {
+.coin_checkbox:after {
   content: ' ';
   display: table;
   -ms-grid-column-span: 1;
@@ -2433,7 +2428,7 @@ textarea.w-select {
   clear: both;
 }
 
-.w-checkbox-input {
+.coin_checkbox-input {
   float: left;
   margin-bottom: 0px;
   margin-left: -20px;
@@ -2505,7 +2500,7 @@ header {
   font-weight: 400;
 }
 
-.tab_header_link.w--current {
+.tab_header_link.active_tab {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2568,6 +2563,12 @@ header {
   line-height: 20px;
 }
 
+.api_key_settings.phone.label {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
 details{
   width: 100%;
 }
@@ -2579,6 +2580,7 @@ details summary::-webkit-details-marker {
 summary:focus {
   outline: 0;
 }
+
 
 .api_key_settings.phone.catch_market_percent {
   display: block;
@@ -2615,10 +2617,14 @@ summary:focus {
 
 .enter_email {
   display: inline-block;
-  max-width: 33%;
   margin-right: 20px;
   margin-bottom: 0px;
   line-height: 30px;
+  width: 100%;
+}
+
+.enter_pass {
+  margin-bottom: 6px;
 }
 
 .text-field-3 {
@@ -2994,6 +3000,7 @@ summary:focus {
   display: inline-flex;
   align-items: center;
   width: 12%;
+  min-width: 160px;
   justify-content: space-between;
   margin-bottom: 12px;
   margin-right: 56px;
@@ -3059,9 +3066,19 @@ summary:focus {
   margin-left: auto;
 }
 
-.arbitrage_start_bot_btn.red{
+.background_red {
   background-color: red;
 }
+
+.background_teal {
+  background-color: teal;
+}
+
+.background_darkseagreen {
+  background-color: darkseagreen;
+}
+
+
 
 .separator {
   width: 100%;
@@ -3142,7 +3159,7 @@ summary:focus {
 }
 
 .div-block-14.stat_line {
-  height: 33px;
+  height: 44px;
   margin-top: 0px;
 }
 
@@ -3156,9 +3173,7 @@ summary:focus {
 
 .text-block-7 {
   display: inline-block;
-  width: 130px;
-  padding-right: 14px;
-  padding-left: 14px;
+  min-width: 10%;
   border-style: none;
   border-width: 1px;
   border-color: #8dc4f4;
@@ -3180,7 +3195,6 @@ summary:focus {
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
-  justify-content: flex-start;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
@@ -3203,6 +3217,11 @@ summary:focus {
   font-size: 16px;
   font-weight: 800;
   text-transform: uppercase;
+}
+
+.text-block-7.stat_cell.name_field {
+  text-transform: none; !important;
+  padding: 0 10px;
 }
 
 .text-block-7.stat_cell.last_bottom_cell.exchange_name_cell.total.stat_from_to {
@@ -3274,8 +3293,9 @@ summary:focus {
   margin-bottom: 0px;
 }
 
-.text-field-7.w-input {
+.text-field-7.field_input {
   padding: 0;
+  min-width: 130px;
 }
 
 .form-block-2 {
@@ -3379,8 +3399,6 @@ summary:focus {
 .input_email_settings {
   display: block;
   height: 29px;
-  max-width: 19%;
-  margin-right: 20px;
   margin-bottom: 0px;
 }
 
@@ -3405,6 +3423,8 @@ summary:focus {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  max-width: 320px;
+  flex-wrap: wrap;
 }
 
 .save_changes_btn_settings {
@@ -3421,6 +3441,17 @@ summary:focus {
   margin-bottom: 0px;
   margin-left: 0px;
 }
+
+@media (max-width: 1000px) {
+  .enter_email {
+    max-width: 320px;
+  }
+
+  .input_email_settings {
+     max-width: 320px;
+  }
+}
+
 
 @media (max-width: 991px) {
   .tab_header_link {
@@ -3459,11 +3490,7 @@ summary:focus {
   }
 
   .api_key_settings.phone.limit {
-    width: auto;
-  }
-
-  .enter_email {
-    max-width: 60%;
+    min-width: 134px;
   }
 
   .text-field-3 {
@@ -3561,13 +3588,13 @@ summary:focus {
   }
 
   .div-block-14.stat_line {
-    padding-right: 10%;
-    padding-left: 10%;
+    /*padding-right: 10%;*/
+    /*padding-left: 10%;*/
   }
 
   .div-block-14.items {
-    padding-right: 10%;
-    padding-left: 10%;
+    /*padding-right: 10%;*/
+    /*padding-left: 10%;*/
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -3575,7 +3602,7 @@ summary:focus {
   }
 
   .div-block-14.items.stat {
-    height: auto;
+    height: 44px;
     -webkit-box-pack: start;
     -webkit-justify-content: flex-start;
     -ms-flex-pack: start;
@@ -3583,6 +3610,7 @@ summary:focus {
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
+    min-width: 992px;
   }
 
   .text-block-7 {
@@ -3607,6 +3635,7 @@ summary:focus {
     width: 13%;
     padding-right: 8px;
     padding-left: 8px;
+    min-width: 96px;
   }
 
   .text-block-7.stat_cell.exchange_name_cell {
@@ -3776,10 +3805,6 @@ summary:focus {
 
   .api_secret_settings.phone.limit {
     width: auto;
-  }
-
-  .input_email_settings {
-    max-width: 25%;
   }
 
   .save_changes_btn_settings {
@@ -4041,13 +4066,13 @@ summary:focus {
   }
 
   .div-block-14.stat_line {
-    padding-right: 3%;
-    padding-left: 3%;
+    /*padding-right: 3%;*/
+    /*padding-left: 3%;*/
   }
 
   .div-block-14.items {
-    padding-right: 3%;
-    padding-left: 3%;
+    /*padding-right: 3%;*/
+    /*padding-left: 3%;*/
   }
 
   .text-block-7 {
@@ -4179,7 +4204,6 @@ summary:focus {
   }
 
   .input_email_settings {
-    max-width: 62%;
     margin-bottom: 10px;
   }
 
@@ -4197,6 +4221,10 @@ summary:focus {
 @media (max-width: 479px) {
   .exchange_block_form {
     max-width: 90%;
+  }
+
+  .submit-button-4 {
+    margin-left: 0;
   }
 
   .tab_header_link {
@@ -4225,7 +4253,7 @@ summary:focus {
     text-align: center;
   }
 
-  .tab_header_link.w--current {
+  .tab_header_link.active_tab {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -4483,7 +4511,6 @@ summary:focus {
     width: 95px;
     padding-right: 0px;
     padding-left: 4px;
-    font-size: 12px;
   }
 
   .text-block-7.exchange_cell {
@@ -4673,4 +4700,81 @@ summary:focus {
     margin-right: auto;
   }
 
+}
+
+
+
+
+.input_coin_limit.field_input.test {
+  width: 80px;
+}
+
+.arbitrage_coin_limit.test {
+  width: 126px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.api_key_settings.phone._3.test {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
+#statistics_exchanges_balances, #statistics_operations {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 20px;
+  margin-left: auto;
+}
+
+#show_statistic_from_to {
+  width: 110px;
+}
+
+#catch_market_orders {
+  margin-bottom: 20px;
+}
+
+#catch_market_orders .div-block-14 {
+  width: 100%;
+  margin: 0;
+}
+
+#catch_market_orders .div-block-14 .text-block-7 {
+  width: 100%;
+}
+
+
+.logout_link {
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  display: block;
+  width: 50px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #3898EC;
+}
+
+.logout_link:hover {
+  text-decoration: underline;
+}
+
+.change_pass summary {
+  width: 164px;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #3898EC;
+}
+
+.change_pass summary:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.change_pass .email_settings {
+  margin-top: 10px;
 }
