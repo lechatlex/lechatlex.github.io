@@ -3051,7 +3051,7 @@ summary:focus {
   cursor: pointer;
 }
 
-.arbitrage_save_changes_btn {
+.test_arbitrage_save_changes_btn {
   display: block;
   min-width: 184px;
   margin: 0px 0px 10px auto;
@@ -3067,7 +3067,7 @@ summary:focus {
   margin-left: -20px;
 }
 
-.arbitrage_start_bot_btn {
+.test_arbitrage_start_bot_btn {
   display: block;
   min-width: 184px;
   margin-right: 0px;
@@ -3075,15 +3075,15 @@ summary:focus {
   margin-left: auto;
 }
 
-.background_red {
+.test_background_red {
   background-color: red;
 }
 
-.background_teal {
+.test_background_teal {
   background-color: teal;
 }
 
-.background_darkseagreen {
+.test_background_darkseagreen {
   background-color: darkseagreen;
 }
 
@@ -3583,7 +3583,7 @@ summary:focus {
     width: auto;
   }
 
-  .arbitrage_save_changes_btn {
+  .test_arbitrage_save_changes_btn {
     margin-left: auto;
   }
 
@@ -3592,7 +3592,7 @@ summary:focus {
     height: 15px;
   }
 
-  .arbitrage_start_bot_btn {
+  .test_arbitrage_start_bot_btn {
     margin-left: auto;
   }
 
@@ -4029,7 +4029,7 @@ summary:focus {
     justify-content: flex-start;
   }
 
-  .arbitrage_save_changes_btn {
+  .test_arbitrage_save_changes_btn {
     margin-top: 0px;
     margin-right: 0px;
     margin-left: 0px;
@@ -4041,16 +4041,16 @@ summary:focus {
     margin-right: 4px;
   }
 
-  .arbitrage_start_bot_btn {
+  .test_arbitrage_start_bot_btn {
     margin-right: 0px;
     margin-left: 0px;
   }
 
-  .btns_arbitrage {
+  .test_btns_arbitrage {
     width: 310px;
   }
 
-  .btns_arbitrage.arbitrage {
+  .test_btns_arbitrage.arbitrage {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -4482,7 +4482,7 @@ summary:focus {
     justify-content: flex-start;
   }
 
-  .arbitrage_save_changes_btn {
+  .test_arbitrage_save_changes_btn {
     margin-top: 0px;
     margin-right: 0px;
   }
@@ -4504,11 +4504,11 @@ summary:focus {
     margin-right: 4px;
   }
 
-  .btns_arbitrage {
+  .test_btns_arbitrage {
     width: auto;
   }
 
-  .btns_arbitrage.arbitrage {
+  .test_btns_arbitrage.arbitrage {
     width: auto;
   }
 
@@ -4786,11 +4786,4 @@ summary:focus {
 
 .change_pass .email_settings {
   margin-top: 10px;
-}
-
-
-.logs_template {
-  max-width: 60%;
-  margin-left: auto;
-  margin-right: auto;
 }

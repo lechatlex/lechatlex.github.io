@@ -11,9 +11,9 @@
         <title>Arbitrage_bot</title>
     
   <meta content="width=device-width, initial-scale=1" name="viewport" />
-  <script src="./static/js/jquery.min.js" type="text/javascript"></script>
-  <link href="./static/css/style.css" rel="stylesheet" type="text/css" />
-  <link href="./static/img/favicon.png" rel="shortcut icon" type="image/x-icon" />
+  <script src="static/js/jquery.min.js" type="text/javascript"></script>
+  <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="static/img/favicon.png" rel="shortcut icon" type="image/x-icon" />
 </head>
 
 <body class="body">
@@ -32,7 +32,7 @@
 		  <div class="tab_header_heading">Арбитраж</div>
 		</a>
 		<a id="catch_market" href="#catch_market" onclick="openContent(event, 'catch_market_content')" class="tab_header_link tab_inline_block tab_link">
-		  <div class="text-block-3">Ловля по рынку</div>
+		  <div class="text-block-3">Закуп на сквизах</div>
 		</a>
 		<a id="statistics" href="#statistics" onclick="openContent(event, 'statistics_content')" class="tab_header_link tab_inline_block tab_link">
 		  <div>Статистика</div>
@@ -46,7 +46,7 @@
 	  <div class="page_tab_content">
 		<div id="arbitrage_content" class="tab_pane">
 		  <div class="arbitrage_form tab_form">
-			<form id="arbitrage_form" name="arbitrage_form_wrap" method="post" class="exchange_block_form"><input type="hidden" name="csrfmiddlewaretoken" value="7UKqZQH7zTZZ4wQmjp21xa6EjKMjPXzAwVTeed2a1zg4MG7tvGcq76Xvxj7kmGZu">
+			<form id="arbitrage_form" name="arbitrage_form_wrap" method="post" class="exchange_block_form"><input type="hidden" name="csrfmiddlewaretoken" value="qHZRFEwCmUpDwpdxLz1cmDsIA3NO9bhJN6O8j7S2yYnQ3Q6XK9rEM13FroE2dRf0">
 				
                     <details>
                         <summary class="exchange exchange_name">kraken</summary>
@@ -58,12 +58,12 @@
                                     <div class="api_key_settings phone _2 arbitrage_title_now">Сейчас на бирже:</div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0021485
+                                            0,1
                                             <strong class="coin_name_bold">BTC</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,1075043
+                                            0,2
                                             <strong class="coin_name_bold">ETH</strong>
                                         </div>
                                     
@@ -83,7 +83,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_BTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_BTC_arbitrage_limit">
+                                          <input type="text" name="kraken_BTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_BTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -92,7 +92,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> ETH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_ETH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_ETH_arbitrage_limit">
+                                          <input type="text" name="kraken_ETH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_ETH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -101,7 +101,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> LTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_LTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_LTC_arbitrage_limit">
+                                          <input type="text" name="kraken_LTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_LTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -110,7 +110,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> XRP, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_XRP_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_XRP_arbitrage_limit">
+                                          <input type="text" name="kraken_XRP_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_XRP_arbitrage_limit">
                                       
                                     
                               </div>
@@ -119,7 +119,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BCH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_BCH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_BCH_arbitrage_limit">
+                                          <input type="text" name="kraken_BCH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_BCH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -128,7 +128,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_USD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_USD_arbitrage_limit">
+                                          <input type="text" name="kraken_USD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_USD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -137,7 +137,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USDT, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_USDT_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_USDT_arbitrage_limit">
+                                          <input type="text" name="kraken_USDT_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_USDT_arbitrage_limit">
                                       
                                     
                               </div>
@@ -146,7 +146,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> TUSD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_TUSD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_TUSD_arbitrage_limit">
+                                          <input type="text" name="kraken_TUSD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_TUSD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -155,7 +155,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> PAX, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="kraken_PAX_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_PAX_arbitrage_limit">
+                                          <input type="text" name="kraken_PAX_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_PAX_arbitrage_limit">
                                       
                                     
                               </div>
@@ -165,22 +165,26 @@
 
 
                         <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли, <strong>%</strong>:</div>
+                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли от одной сделки, <strong>%</strong> от баланса валюты сделки:</div>
                                 
                                     
-                                      <input type="text" name="kraken_min_profit_percent" value="1" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_kraken_min_profit_percent">
+                                      <input type="text" name="kraken_min_profit_percent" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_kraken_min_profit_percent">
                                     
                                 
                         </div>
 
-                        <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone arbitrage_block">Глубина проведения сделки, <strong>шагов:</strong></div>
-                                
-                                    
-                                      <input type="text" name="kraken_arbitrage_trade_steps" maxlength="1" class="text-field-4 step_arbitrage field_input"  onkeypress="validate(event)" id="id_kraken_arbitrage_trade_steps">
-                                    
-                                
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </details>
 				
@@ -194,18 +198,23 @@
                                     <div class="api_key_settings phone _2 arbitrage_title_now">Сейчас на бирже:</div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0021245
+                                            0,1
                                             <strong class="coin_name_bold">BTC</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,071251
+                                            0,1
                                             <strong class="coin_name_bold">BCH</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,1071237
+                                            0,2
                                             <strong class="coin_name_bold">ETH</strong>
+                                        </div>
+                                    
+                                        <div class="exchange_coin_now">
+                                            10
+                                            <strong class="coin_name_bold">XRP</strong>
                                         </div>
                                     
                                 
@@ -224,7 +233,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_BTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BTC_arbitrage_limit">
+                                          <input type="text" name="bitbay_BTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -233,7 +242,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> ETH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_ETH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_ETH_arbitrage_limit">
+                                          <input type="text" name="bitbay_ETH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_ETH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -242,7 +251,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> LTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_LTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_LTC_arbitrage_limit">
+                                          <input type="text" name="bitbay_LTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_LTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -251,7 +260,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> XRP, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_XRP_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_XRP_arbitrage_limit">
+                                          <input type="text" name="bitbay_XRP_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_XRP_arbitrage_limit">
                                       
                                     
                               </div>
@@ -260,7 +269,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BCH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_BCH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BCH_arbitrage_limit">
+                                          <input type="text" name="bitbay_BCH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BCH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -269,7 +278,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_USD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_USD_arbitrage_limit">
+                                          <input type="text" name="bitbay_USD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_USD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -278,7 +287,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USDT, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_USDT_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_USDT_arbitrage_limit">
+                                          <input type="text" name="bitbay_USDT_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_USDT_arbitrage_limit">
                                       
                                     
                               </div>
@@ -287,7 +296,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> TUSD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_TUSD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_TUSD_arbitrage_limit">
+                                          <input type="text" name="bitbay_TUSD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_TUSD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -296,7 +305,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> PAX, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitbay_PAX_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_PAX_arbitrage_limit">
+                                          <input type="text" name="bitbay_PAX_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_PAX_arbitrage_limit">
                                       
                                     
                               </div>
@@ -306,22 +315,26 @@
 
 
                         <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли, <strong>%</strong>:</div>
+                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли от одной сделки, <strong>%</strong> от баланса валюты сделки:</div>
                                 
                                     
-                                      <input type="text" name="bitbay_min_profit_percent" value="1" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_bitbay_min_profit_percent">
+                                      <input type="text" name="bitbay_min_profit_percent" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_bitbay_min_profit_percent">
                                     
                                 
                         </div>
 
-                        <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone arbitrage_block">Глубина проведения сделки, <strong>шагов:</strong></div>
-                                
-                                    
-                                      <input type="text" name="bitbay_arbitrage_trade_steps" maxlength="1" class="text-field-4 step_arbitrage field_input"  onkeypress="validate(event)" id="id_bitbay_arbitrage_trade_steps">
-                                    
-                                
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </details>
 				
@@ -335,22 +348,22 @@
                                     <div class="api_key_settings phone _2 arbitrage_title_now">Сейчас на бирже:</div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0020244
+                                            0,1
                                             <strong class="coin_name_bold">BTC</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,106553
+                                            0,1
                                             <strong class="coin_name_bold">ETH</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0709539
+                                            0,2
                                             <strong class="coin_name_bold">BCH</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            1,2592813
+                                            3,6
                                             <strong class="coin_name_bold">USD</strong>
                                         </div>
                                     
@@ -370,7 +383,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_BTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BTC_arbitrage_limit">
+                                          <input type="text" name="exmo_BTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -379,7 +392,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> ETH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_ETH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_ETH_arbitrage_limit">
+                                          <input type="text" name="exmo_ETH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_ETH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -388,7 +401,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> LTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_LTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_LTC_arbitrage_limit">
+                                          <input type="text" name="exmo_LTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_LTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -397,7 +410,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> XRP, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_XRP_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_XRP_arbitrage_limit">
+                                          <input type="text" name="exmo_XRP_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_XRP_arbitrage_limit">
                                       
                                     
                               </div>
@@ -406,7 +419,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BCH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_BCH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BCH_arbitrage_limit">
+                                          <input type="text" name="exmo_BCH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BCH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -415,7 +428,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_USD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_USD_arbitrage_limit">
+                                          <input type="text" name="exmo_USD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_USD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -424,7 +437,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USDT, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_USDT_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_USDT_arbitrage_limit">
+                                          <input type="text" name="exmo_USDT_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_USDT_arbitrage_limit">
                                       
                                     
                               </div>
@@ -433,7 +446,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> TUSD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_TUSD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_TUSD_arbitrage_limit">
+                                          <input type="text" name="exmo_TUSD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_TUSD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -442,7 +455,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> PAX, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="exmo_PAX_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_PAX_arbitrage_limit">
+                                          <input type="text" name="exmo_PAX_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_PAX_arbitrage_limit">
                                       
                                     
                               </div>
@@ -452,22 +465,26 @@
 
 
                         <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли, <strong>%</strong>:</div>
+                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли от одной сделки, <strong>%</strong> от баланса валюты сделки:</div>
                                 
                                     
-                                      <input type="text" name="exmo_min_profit_percent" value="1" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_exmo_min_profit_percent">
+                                      <input type="text" name="exmo_min_profit_percent" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_exmo_min_profit_percent">
                                     
                                 
                         </div>
 
-                        <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone arbitrage_block">Глубина проведения сделки, <strong>шагов:</strong></div>
-                                
-                                    
-                                      <input type="text" name="exmo_arbitrage_trade_steps" maxlength="1" class="text-field-4 step_arbitrage field_input"  onkeypress="validate(event)" id="id_exmo_arbitrage_trade_steps">
-                                    
-                                
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </details>
 				
@@ -481,17 +498,17 @@
                                     <div class="api_key_settings phone _2 arbitrage_title_now">Сейчас на бирже:</div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0772566
+                                            0,1
                                             <strong class="coin_name_bold">BCH</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0021259
+                                            0,125
                                             <strong class="coin_name_bold">BTC</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            13,18
+                                            14,158
                                             <strong class="coin_name_bold">USD</strong>
                                         </div>
                                     
@@ -511,7 +528,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_BTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_BTC_arbitrage_limit">
+                                          <input type="text" name="bitstamp_BTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_BTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -520,7 +537,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> ETH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_ETH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_ETH_arbitrage_limit">
+                                          <input type="text" name="bitstamp_ETH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_ETH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -529,7 +546,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> LTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_LTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_LTC_arbitrage_limit">
+                                          <input type="text" name="bitstamp_LTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_LTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -538,7 +555,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> XRP, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_XRP_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_XRP_arbitrage_limit">
+                                          <input type="text" name="bitstamp_XRP_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_XRP_arbitrage_limit">
                                       
                                     
                               </div>
@@ -547,7 +564,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BCH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_BCH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_BCH_arbitrage_limit">
+                                          <input type="text" name="bitstamp_BCH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_BCH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -556,7 +573,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_USD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_USD_arbitrage_limit">
+                                          <input type="text" name="bitstamp_USD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_USD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -565,7 +582,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USDT, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_USDT_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_USDT_arbitrage_limit">
+                                          <input type="text" name="bitstamp_USDT_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_USDT_arbitrage_limit">
                                       
                                     
                               </div>
@@ -574,7 +591,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> TUSD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_TUSD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_TUSD_arbitrage_limit">
+                                          <input type="text" name="bitstamp_TUSD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_TUSD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -583,7 +600,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> PAX, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bitstamp_PAX_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_PAX_arbitrage_limit">
+                                          <input type="text" name="bitstamp_PAX_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_PAX_arbitrage_limit">
                                       
                                     
                               </div>
@@ -593,22 +610,26 @@
 
 
                         <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли, <strong>%</strong>:</div>
+                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли от одной сделки, <strong>%</strong> от баланса валюты сделки:</div>
                                 
                                     
-                                      <input type="text" name="bitstamp_min_profit_percent" value="1" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_bitstamp_min_profit_percent">
+                                      <input type="text" name="bitstamp_min_profit_percent" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_bitstamp_min_profit_percent">
                                     
                                 
                         </div>
 
-                        <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone arbitrage_block">Глубина проведения сделки, <strong>шагов:</strong></div>
-                                
-                                    
-                                      <input type="text" name="bitstamp_arbitrage_trade_steps" maxlength="1" class="text-field-4 step_arbitrage field_input"  onkeypress="validate(event)" id="id_bitstamp_arbitrage_trade_steps">
-                                    
-                                
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </details>
 				
@@ -622,17 +643,17 @@
                                     <div class="api_key_settings phone _2 arbitrage_title_now">Сейчас на бирже:</div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0021382
+                                            0,152
                                             <strong class="coin_name_bold">BTC</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,107498
+                                            0,15878
                                             <strong class="coin_name_bold">ETH</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0707687
+                                            0,824
                                             <strong class="coin_name_bold">BCH</strong>
                                         </div>
                                     
@@ -652,7 +673,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_BTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_BTC_arbitrage_limit">
+                                          <input type="text" name="okcoin_BTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_BTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -661,7 +682,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> ETH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_ETH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_ETH_arbitrage_limit">
+                                          <input type="text" name="okcoin_ETH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_ETH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -670,7 +691,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> LTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_LTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_LTC_arbitrage_limit">
+                                          <input type="text" name="okcoin_LTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_LTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -679,7 +700,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> XRP, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_XRP_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_XRP_arbitrage_limit">
+                                          <input type="text" name="okcoin_XRP_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_XRP_arbitrage_limit">
                                       
                                     
                               </div>
@@ -688,7 +709,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BCH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_BCH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_BCH_arbitrage_limit">
+                                          <input type="text" name="okcoin_BCH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_BCH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -697,7 +718,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_USD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_USD_arbitrage_limit">
+                                          <input type="text" name="okcoin_USD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_USD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -706,7 +727,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USDT, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_USDT_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_USDT_arbitrage_limit">
+                                          <input type="text" name="okcoin_USDT_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_USDT_arbitrage_limit">
                                       
                                     
                               </div>
@@ -715,7 +736,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> TUSD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_TUSD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_TUSD_arbitrage_limit">
+                                          <input type="text" name="okcoin_TUSD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_TUSD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -724,7 +745,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> PAX, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="okcoin_PAX_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_PAX_arbitrage_limit">
+                                          <input type="text" name="okcoin_PAX_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_PAX_arbitrage_limit">
                                       
                                     
                               </div>
@@ -734,22 +755,26 @@
 
 
                         <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли, <strong>%</strong>:</div>
+                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли от одной сделки, <strong>%</strong> от баланса валюты сделки:</div>
                                 
                                     
-                                      <input type="text" name="okcoin_min_profit_percent" value="1" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_okcoin_min_profit_percent">
+                                      <input type="text" name="okcoin_min_profit_percent" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_okcoin_min_profit_percent">
                                     
                                 
                         </div>
 
-                        <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone arbitrage_block">Глубина проведения сделки, <strong>шагов:</strong></div>
-                                
-                                    
-                                      <input type="text" name="okcoin_arbitrage_trade_steps" maxlength="1" class="text-field-4 step_arbitrage field_input"  onkeypress="validate(event)" id="id_okcoin_arbitrage_trade_steps">
-                                    
-                                
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </details>
 				
@@ -763,17 +788,22 @@
                                     <div class="api_key_settings phone _2 arbitrage_title_now">Сейчас на бирже:</div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,0707503
+                                            1.25
                                             <strong class="coin_name_bold">BCH</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,002122
+                                            0,42545
                                             <strong class="coin_name_bold">BTC</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,1
+                                            1000
+                                            <strong class="coin_name_bold">BTXCRD</strong>
+                                        </div>
+                                    
+                                        <div class="exchange_coin_now">
+                                            6,54
                                             <strong class="coin_name_bold">ETH</strong>
                                         </div>
                                     
@@ -793,7 +823,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_BTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_BTC_arbitrage_limit">
+                                          <input type="text" name="bittrex_BTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_BTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -802,7 +832,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> ETH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_ETH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_ETH_arbitrage_limit">
+                                          <input type="text" name="bittrex_ETH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_ETH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -811,7 +841,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> LTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_LTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_LTC_arbitrage_limit">
+                                          <input type="text" name="bittrex_LTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_LTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -820,7 +850,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> XRP, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_XRP_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_XRP_arbitrage_limit">
+                                          <input type="text" name="bittrex_XRP_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_XRP_arbitrage_limit">
                                       
                                     
                               </div>
@@ -829,7 +859,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BCH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_BCH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_BCH_arbitrage_limit">
+                                          <input type="text" name="bittrex_BCH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_BCH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -838,7 +868,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_USD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_USD_arbitrage_limit">
+                                          <input type="text" name="bittrex_USD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_USD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -847,7 +877,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USDT, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_USDT_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_USDT_arbitrage_limit">
+                                          <input type="text" name="bittrex_USDT_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_USDT_arbitrage_limit">
                                       
                                     
                               </div>
@@ -856,7 +886,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> TUSD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_TUSD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_TUSD_arbitrage_limit">
+                                          <input type="text" name="bittrex_TUSD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_TUSD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -865,7 +895,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> PAX, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="bittrex_PAX_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_PAX_arbitrage_limit">
+                                          <input type="text" name="bittrex_PAX_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_PAX_arbitrage_limit">
                                       
                                     
                               </div>
@@ -875,22 +905,26 @@
 
 
                         <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли, <strong>%</strong>:</div>
+                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли от одной сделки, <strong>%</strong> от баланса валюты сделки:</div>
                                 
                                     
-                                      <input type="text" name="bittrex_min_profit_percent" value="1" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_bittrex_min_profit_percent">
+                                      <input type="text" name="bittrex_min_profit_percent" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_bittrex_min_profit_percent">
                                     
                                 
                         </div>
 
-                        <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone arbitrage_block">Глубина проведения сделки, <strong>шагов:</strong></div>
-                                
-                                    
-                                      <input type="text" name="bittrex_arbitrage_trade_steps" maxlength="1" class="text-field-4 step_arbitrage field_input"  onkeypress="validate(event)" id="id_bittrex_arbitrage_trade_steps">
-                                    
-                                
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </details>
 				
@@ -904,17 +938,17 @@
                                     <div class="api_key_settings phone _2 arbitrage_title_now">Сейчас на бирже:</div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,002
+                                            0,1
                                             <strong class="coin_name_bold">BTC</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,105
+                                            0,6
                                             <strong class="coin_name_bold">ETH</strong>
                                         </div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,06913
+                                            0,75875
                                             <strong class="coin_name_bold">BCH</strong>
                                         </div>
                                     
@@ -934,7 +968,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_BTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_BTC_arbitrage_limit">
+                                          <input type="text" name="binance_BTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_BTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -943,7 +977,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> ETH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_ETH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_ETH_arbitrage_limit">
+                                          <input type="text" name="binance_ETH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_ETH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -952,7 +986,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> LTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_LTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_LTC_arbitrage_limit">
+                                          <input type="text" name="binance_LTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_LTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -961,7 +995,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> XRP, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_XRP_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_XRP_arbitrage_limit">
+                                          <input type="text" name="binance_XRP_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_XRP_arbitrage_limit">
                                       
                                     
                               </div>
@@ -970,7 +1004,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BCH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_BCH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_BCH_arbitrage_limit">
+                                          <input type="text" name="binance_BCH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_BCH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -979,7 +1013,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_USD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_USD_arbitrage_limit">
+                                          <input type="text" name="binance_USD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_USD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -988,7 +1022,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USDT, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_USDT_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_USDT_arbitrage_limit">
+                                          <input type="text" name="binance_USDT_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_USDT_arbitrage_limit">
                                       
                                     
                               </div>
@@ -997,7 +1031,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> TUSD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_TUSD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_TUSD_arbitrage_limit">
+                                          <input type="text" name="binance_TUSD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_TUSD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1006,7 +1040,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> PAX, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="binance_PAX_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_PAX_arbitrage_limit">
+                                          <input type="text" name="binance_PAX_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_PAX_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1016,22 +1050,26 @@
 
 
                         <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли, <strong>%</strong>:</div>
+                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли от одной сделки, <strong>%</strong> от баланса валюты сделки:</div>
                                 
                                     
-                                      <input type="text" name="binance_min_profit_percent" value="1" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_binance_min_profit_percent">
+                                      <input type="text" name="binance_min_profit_percent" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_binance_min_profit_percent">
                                     
                                 
                         </div>
 
-                        <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone arbitrage_block">Глубина проведения сделки, <strong>шагов:</strong></div>
-                                
-                                    
-                                      <input type="text" name="binance_arbitrage_trade_steps" maxlength="1" class="text-field-4 step_arbitrage field_input"  onkeypress="validate(event)" id="id_binance_arbitrage_trade_steps">
-                                    
-                                
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </details>
 				
@@ -1045,7 +1083,7 @@
                                     <div class="api_key_settings phone _2 arbitrage_title_now">Сейчас на бирже:</div>
                                     
                                         <div class="exchange_coin_now">
-                                            0,025247
+                                            0,848
                                             <strong class="coin_name_bold">USDT</strong>
                                         </div>
                                     
@@ -1065,7 +1103,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_BTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_BTC_arbitrage_limit">
+                                          <input type="text" name="dsx_BTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_BTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1074,7 +1112,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> ETH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_ETH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_ETH_arbitrage_limit">
+                                          <input type="text" name="dsx_ETH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_ETH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1083,7 +1121,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> LTC, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_LTC_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_LTC_arbitrage_limit">
+                                          <input type="text" name="dsx_LTC_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_LTC_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1092,7 +1130,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> XRP, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_XRP_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_XRP_arbitrage_limit">
+                                          <input type="text" name="dsx_XRP_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_XRP_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1101,7 +1139,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> BCH, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_BCH_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_BCH_arbitrage_limit">
+                                          <input type="text" name="dsx_BCH_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_BCH_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1110,7 +1148,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_USD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_USD_arbitrage_limit">
+                                          <input type="text" name="dsx_USD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_USD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1119,7 +1157,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> USDT, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_USDT_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_USDT_arbitrage_limit">
+                                          <input type="text" name="dsx_USDT_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_USDT_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1128,7 +1166,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> TUSD, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_TUSD_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_TUSD_arbitrage_limit">
+                                          <input type="text" name="dsx_TUSD_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_TUSD_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1137,7 +1175,7 @@
                                 <div class="api_key_settings phone arbitrage_block">Лимит для<strong> PAX, %:</strong></div>
                                     
                                       
-                                          <input type="text" name="dsx_PAX_arbitrage_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_PAX_arbitrage_limit">
+                                          <input type="text" name="dsx_PAX_arbitrage_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_dsx_PAX_arbitrage_limit">
                                       
                                     
                               </div>
@@ -1147,30 +1185,36 @@
 
 
                         <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли, <strong>%</strong>:</div>
+                            <div class="api_key_settings phone _1 arbitrage_block">Минимальный процент прибыли от одной сделки, <strong>%</strong> от баланса валюты сделки:</div>
                                 
                                     
-                                      <input type="text" name="dsx_min_profit_percent" value="1" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_dsx_min_profit_percent">
+                                      <input type="text" name="dsx_min_profit_percent" maxlength="2" class="text-field-4 min_profit_percent arbitrage field_input"  onkeypress="validate(event)" id="id_dsx_min_profit_percent">
                                     
                                 
                         </div>
 
-                        <div class="exchange_coins_now line">
-                            <div class="api_key_settings phone arbitrage_block">Глубина проведения сделки, <strong>шагов:</strong></div>
-                                
-                                    
-                                      <input type="text" name="dsx_arbitrage_trade_steps" maxlength="1" class="text-field-4 step_arbitrage field_input"  onkeypress="validate(event)" id="id_dsx_arbitrage_trade_steps">
-                                    
-                                
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
                     </details>
 				
 			  <div class="btns_arbitrage arbitrage">
                   <input id="arbitrage_save_changes" type="submit" name="arbitrage_settings" value="Сохранить изменения" class="arbitrage_save_changes_btn form_button" />
                   
-                      <input id="start_stop_or_save_arbitrage" type="hidden" name="arbitrage_start_bot" value="1">
-                      <input id="arbitrage_btn" type="submit" name="arbitrage_start_bot" value="Запустить робота" class="arbitrage_start_bot_btn form_button" />
+                      
+                          <input id="start_stop_or_save_arbitrage" type="hidden" name="arbitrage_stop_bot" value="1">
+                          <input id="arbitrage_btn" type="submit" name="arbitrage_stop_bot" value="Остановить робота" class="arbitrage_start_bot_btn form_button background_red" />
+                      
                   
               </div>
 			</form>
@@ -1180,7 +1224,7 @@
 
 		<div id="catch_market_content" class="tab_pane">
 		  <div class="tab_form">
-			<form id="catch_market_form" method="post" class="exchange_block_form"><input type="hidden" name="csrfmiddlewaretoken" value="7UKqZQH7zTZZ4wQmjp21xa6EjKMjPXzAwVTeed2a1zg4MG7tvGcq76Xvxj7kmGZu">
+			<form id="catch_market_form" method="post" class="exchange_block_form"><input type="hidden" name="csrfmiddlewaretoken" value="qHZRFEwCmUpDwpdxLz1cmDsIA3NO9bhJN6O8j7S2yYnQ3Q6XK9rEM13FroE2dRf0">
                 
                     <details>
                         <summary class="exchange exchange_name">kraken</summary>
@@ -1190,7 +1234,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> BTC, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="kraken_BTC_catch_market_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_BTC_catch_market_limit">
+                                            <input type="text" name="kraken_BTC_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_BTC_catch_market_limit">
                                           
                                         
 
@@ -1280,14 +1324,14 @@
                             <div class="separator"></div>
                             <div class="catch_market_coins_limits">
                             
-                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#39;BTC&#39;, &#39;ETH&#39;, &#39;LTC&#39;, &#39;XRP&#39;, &#39;BCH&#39;, &#39;USD&#39;, &#39;USDT&#39;, &#39;TUSD&#39;, &#39;PAX&#39;] и на балансе)</div>
+                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#x27;BTC&#x27;, &#x27;ETH&#x27;, &#x27;LTC&#x27;, &#x27;XRP&#x27;, &#x27;BCH&#x27;, &#x27;USD&#x27;, &#x27;USDT&#x27;, &#x27;TUSD&#x27;, &#x27;PAX&#x27;] и на балансе)</div>
                             
                                 
                                     <div class="catch_market_order_percent">
                                         <div class="api_key_settings phone"><strong>ADA/BTC</strong></div>
                                         
                                             
-                                                <input type="text" name="kraken_ADA_BTC_catch_market_order_percent" value="20" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_ADA_BTC_catch_market_order_percent">
+                                                <input type="text" name="kraken_ADA_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_kraken_ADA_BTC_catch_market_order_percent">
                                             
                                         
 
@@ -1745,7 +1789,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> BTC, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_BTC_catch_market_limit" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BTC_catch_market_limit">
+                                            <input type="text" name="bitbay_BTC_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BTC_catch_market_limit">
                                           
                                         
 
@@ -1755,7 +1799,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> ETH, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_ETH_catch_market_limit" value="2" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_ETH_catch_market_limit">
+                                            <input type="text" name="bitbay_ETH_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_ETH_catch_market_limit">
                                           
                                         
 
@@ -1765,7 +1809,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> LTC, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_LTC_catch_market_limit" value="2" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_LTC_catch_market_limit">
+                                            <input type="text" name="bitbay_LTC_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_LTC_catch_market_limit">
                                           
                                         
 
@@ -1775,7 +1819,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> XRP, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_XRP_catch_market_limit" value="2" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_XRP_catch_market_limit">
+                                            <input type="text" name="bitbay_XRP_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_XRP_catch_market_limit">
                                           
                                         
 
@@ -1785,7 +1829,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> BCH, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_BCH_catch_market_limit" value="2" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BCH_catch_market_limit">
+                                            <input type="text" name="bitbay_BCH_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BCH_catch_market_limit">
                                           
                                         
 
@@ -1795,7 +1839,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> USD, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_USD_catch_market_limit" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_USD_catch_market_limit">
+                                            <input type="text" name="bitbay_USD_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_USD_catch_market_limit">
                                           
                                         
 
@@ -1805,7 +1849,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> USDT, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_USDT_catch_market_limit" value="2" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_USDT_catch_market_limit">
+                                            <input type="text" name="bitbay_USDT_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_USDT_catch_market_limit">
                                           
                                         
 
@@ -1815,7 +1859,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> TUSD, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_TUSD_catch_market_limit" value="2" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_TUSD_catch_market_limit">
+                                            <input type="text" name="bitbay_TUSD_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_TUSD_catch_market_limit">
                                           
                                         
 
@@ -1825,7 +1869,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> PAX, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitbay_PAX_catch_market_limit" value="2" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_PAX_catch_market_limit">
+                                            <input type="text" name="bitbay_PAX_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_PAX_catch_market_limit">
                                           
                                         
 
@@ -1835,7 +1879,7 @@
                             <div class="separator"></div>
                             <div class="catch_market_coins_limits">
                             
-                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#39;BTC&#39;, &#39;ETH&#39;, &#39;LTC&#39;, &#39;XRP&#39;, &#39;BCH&#39;, &#39;USD&#39;, &#39;USDT&#39;, &#39;TUSD&#39;, &#39;PAX&#39;] и на балансе)</div>
+                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#x27;BTC&#x27;, &#x27;ETH&#x27;, &#x27;LTC&#x27;, &#x27;XRP&#x27;, &#x27;BCH&#x27;, &#x27;USD&#x27;, &#x27;USDT&#x27;, &#x27;TUSD&#x27;, &#x27;PAX&#x27;] и на балансе)</div>
                             
                                 
                                     <div class="catch_market_order_percent">
@@ -1853,7 +1897,7 @@
                                         <div class="api_key_settings phone"><strong>BCH/BTC</strong></div>
                                         
                                             
-                                                <input type="text" name="bitbay_BCH_BTC_catch_market_order_percent" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BCH_BTC_catch_market_order_percent">
+                                                <input type="text" name="bitbay_BCH_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_BCH_BTC_catch_market_order_percent">
                                             
                                         
 
@@ -1897,7 +1941,7 @@
                                         <div class="api_key_settings phone"><strong>ETH/BTC</strong></div>
                                         
                                             
-                                                <input type="text" name="bitbay_ETH_BTC_catch_market_order_percent" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_ETH_BTC_catch_market_order_percent">
+                                                <input type="text" name="bitbay_ETH_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_ETH_BTC_catch_market_order_percent">
                                             
                                         
 
@@ -2062,7 +2106,7 @@
                                         <div class="api_key_settings phone"><strong>XRP/BTC</strong></div>
                                         
                                             
-                                                <input type="text" name="bitbay_XRP_BTC_catch_market_order_percent" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_XRP_BTC_catch_market_order_percent">
+                                                <input type="text" name="bitbay_XRP_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitbay_XRP_BTC_catch_market_order_percent">
                                             
                                         
 
@@ -2102,7 +2146,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> BTC, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="exmo_BTC_catch_market_limit" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BTC_catch_market_limit">
+                                            <input type="text" name="exmo_BTC_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BTC_catch_market_limit">
                                           
                                         
 
@@ -2112,7 +2156,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> ETH, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="exmo_ETH_catch_market_limit" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_ETH_catch_market_limit">
+                                            <input type="text" name="exmo_ETH_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_ETH_catch_market_limit">
                                           
                                         
 
@@ -2152,7 +2196,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> USD, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="exmo_USD_catch_market_limit" value="99" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_USD_catch_market_limit">
+                                            <input type="text" name="exmo_USD_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_USD_catch_market_limit">
                                           
                                         
 
@@ -2192,7 +2236,7 @@
                             <div class="separator"></div>
                             <div class="catch_market_coins_limits">
                             
-                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#39;BTC&#39;, &#39;ETH&#39;, &#39;LTC&#39;, &#39;XRP&#39;, &#39;BCH&#39;, &#39;USD&#39;, &#39;USDT&#39;, &#39;TUSD&#39;, &#39;PAX&#39;] и на балансе)</div>
+                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#x27;BTC&#x27;, &#x27;ETH&#x27;, &#x27;LTC&#x27;, &#x27;XRP&#x27;, &#x27;BCH&#x27;, &#x27;USD&#x27;, &#x27;USDT&#x27;, &#x27;TUSD&#x27;, &#x27;PAX&#x27;] и на балансе)</div>
                             
                                 
                                     <div class="catch_market_order_percent">
@@ -2254,7 +2298,7 @@
                                         <div class="api_key_settings phone"><strong>BTC/USD</strong></div>
                                         
                                             
-                                                <input type="text" name="exmo_BTC_USD_catch_market_order_percent" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BTC_USD_catch_market_order_percent">
+                                                <input type="text" name="exmo_BTC_USD_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BTC_USD_catch_market_order_percent">
                                             
                                         
 
@@ -2288,6 +2332,28 @@
                                         
                                             
                                                 <input type="text" name="exmo_BTT_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_BTT_BTC_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>DAI/BTC</strong></div>
+                                        
+                                            
+                                                <input type="text" name="exmo_DAI_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_DAI_BTC_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>DAI/ETH</strong></div>
+                                        
+                                            
+                                                <input type="text" name="exmo_DAI_ETH_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_exmo_DAI_ETH_catch_market_order_percent">
                                             
                                         
 
@@ -2679,7 +2745,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> BTC, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitstamp_BTC_catch_market_limit" value="80" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_BTC_catch_market_limit">
+                                            <input type="text" name="bitstamp_BTC_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_BTC_catch_market_limit">
                                           
                                         
 
@@ -2729,7 +2795,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> USD, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bitstamp_USD_catch_market_limit" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_USD_catch_market_limit">
+                                            <input type="text" name="bitstamp_USD_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_USD_catch_market_limit">
                                           
                                         
 
@@ -2769,14 +2835,14 @@
                             <div class="separator"></div>
                             <div class="catch_market_coins_limits">
                             
-                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#39;BTC&#39;, &#39;ETH&#39;, &#39;LTC&#39;, &#39;XRP&#39;, &#39;BCH&#39;, &#39;USD&#39;, &#39;USDT&#39;, &#39;TUSD&#39;, &#39;PAX&#39;] и на балансе)</div>
+                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#x27;BTC&#x27;, &#x27;ETH&#x27;, &#x27;LTC&#x27;, &#x27;XRP&#x27;, &#x27;BCH&#x27;, &#x27;USD&#x27;, &#x27;USDT&#x27;, &#x27;TUSD&#x27;, &#x27;PAX&#x27;] и на балансе)</div>
                             
                                 
                                     <div class="catch_market_order_percent">
                                         <div class="api_key_settings phone"><strong>BCH/BTC</strong></div>
                                         
                                             
-                                                <input type="text" name="bitstamp_BCH_BTC_catch_market_order_percent" value="50" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_BCH_BTC_catch_market_order_percent">
+                                                <input type="text" name="bitstamp_BCH_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bitstamp_BCH_BTC_catch_market_order_percent">
                                             
                                         
 
@@ -2882,7 +2948,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> BTC, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="okcoin_BTC_catch_market_limit" value="10" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_BTC_catch_market_limit">
+                                            <input type="text" name="okcoin_BTC_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_okcoin_BTC_catch_market_limit">
                                           
                                         
 
@@ -2986,7 +3052,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> BTC, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="bittrex_BTC_catch_market_limit" value="40" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_BTC_catch_market_limit">
+                                            <input type="text" name="bittrex_BTC_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_BTC_catch_market_limit">
                                           
                                         
 
@@ -3076,14 +3142,14 @@
                             <div class="separator"></div>
                             <div class="catch_market_coins_limits">
                             
-                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#39;BTC&#39;, &#39;ETH&#39;, &#39;LTC&#39;, &#39;XRP&#39;, &#39;BCH&#39;, &#39;USD&#39;, &#39;USDT&#39;, &#39;TUSD&#39;, &#39;PAX&#39;] и на балансе)</div>
+                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#x27;BTC&#x27;, &#x27;ETH&#x27;, &#x27;LTC&#x27;, &#x27;XRP&#x27;, &#x27;BCH&#x27;, &#x27;USD&#x27;, &#x27;USDT&#x27;, &#x27;TUSD&#x27;, &#x27;PAX&#x27;] и на балансе)</div>
                             
                                 
                                     <div class="catch_market_order_percent">
                                         <div class="api_key_settings phone"><strong>ADA/BTC</strong></div>
                                         
                                             
-                                                <input type="text" name="bittrex_ADA_BTC_catch_market_order_percent" value="20" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_ADA_BTC_catch_market_order_percent">
+                                                <input type="text" name="bittrex_ADA_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_ADA_BTC_catch_market_order_percent">
                                             
                                         
 
@@ -3315,6 +3381,28 @@
                                         
                                             
                                                 <input type="text" name="bittrex_CVC_ETH_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_CVC_ETH_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>DAI/BTC</strong></div>
+                                        
+                                            
+                                                <input type="text" name="bittrex_DAI_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_DAI_BTC_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>DAI/ETH</strong></div>
+                                        
+                                            
+                                                <input type="text" name="bittrex_DAI_ETH_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_DAI_ETH_catch_market_order_percent">
                                             
                                         
 
@@ -3623,6 +3711,17 @@
                                         
                                             
                                                 <input type="text" name="bittrex_KMD_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_KMD_BTC_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>LINK/BTC</strong></div>
+                                        
+                                            
+                                                <input type="text" name="bittrex_LINK_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_LINK_BTC_catch_market_order_percent">
                                             
                                         
 
@@ -4235,6 +4334,17 @@
                                     </div>
                                 
                                     <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>VITE/BTC</strong></div>
+                                        
+                                            
+                                                <input type="text" name="bittrex_VITE_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_VITE_BTC_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
                                         <div class="api_key_settings phone"><strong>WAVES/BTC</strong></div>
                                         
                                             
@@ -4345,6 +4455,28 @@
                                     </div>
                                 
                                     <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>XTZ/BTC</strong></div>
+                                        
+                                            
+                                                <input type="text" name="bittrex_XTZ_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_XTZ_BTC_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>XTZ/ETH</strong></div>
+                                        
+                                            
+                                                <input type="text" name="bittrex_XTZ_ETH_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_bittrex_XTZ_ETH_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
                                         <div class="api_key_settings phone"><strong>XVG/BTC</strong></div>
                                         
                                             
@@ -4443,7 +4575,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> BTC, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="binance_BTC_catch_market_limit" value="50" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_BTC_catch_market_limit">
+                                            <input type="text" name="binance_BTC_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_BTC_catch_market_limit">
                                           
                                         
 
@@ -4453,7 +4585,7 @@
                                     <div class="api_key_settings phone limit">Лимит для<strong> ETH, %:</strong></div>
                                         
                                           
-                                            <input type="text" name="binance_ETH_catch_market_limit" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_ETH_catch_market_limit">
+                                            <input type="text" name="binance_ETH_catch_market_limit" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_ETH_catch_market_limit">
                                           
                                         
 
@@ -4533,14 +4665,14 @@
                             <div class="separator"></div>
                             <div class="catch_market_coins_limits">
                             
-                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#39;BTC&#39;, &#39;ETH&#39;, &#39;LTC&#39;, &#39;XRP&#39;, &#39;BCH&#39;, &#39;USD&#39;, &#39;USDT&#39;, &#39;TUSD&#39;, &#39;PAX&#39;] и на балансе)</div>
+                                <div class="api_key_settings phone label">Выставить ордер для пары с ценой ниже рыночной на ... (Показываются только те пары, для которых котируемая валюта есть в основных монетах: [&#x27;BTC&#x27;, &#x27;ETH&#x27;, &#x27;LTC&#x27;, &#x27;XRP&#x27;, &#x27;BCH&#x27;, &#x27;USD&#x27;, &#x27;USDT&#x27;, &#x27;TUSD&#x27;, &#x27;PAX&#x27;] и на балансе)</div>
                             
                                 
                                     <div class="catch_market_order_percent">
                                         <div class="api_key_settings phone"><strong>ADA/BTC</strong></div>
                                         
                                             
-                                                <input type="text" name="binance_ADA_BTC_catch_market_order_percent" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_ADA_BTC_catch_market_order_percent">
+                                                <input type="text" name="binance_ADA_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_ADA_BTC_catch_market_order_percent">
                                             
                                         
 
@@ -4551,7 +4683,7 @@
                                         <div class="api_key_settings phone"><strong>ADA/ETH</strong></div>
                                         
                                             
-                                                <input type="text" name="binance_ADA_ETH_catch_market_order_percent" value="30" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_ADA_ETH_catch_market_order_percent">
+                                                <input type="text" name="binance_ADA_ETH_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_ADA_ETH_catch_market_order_percent">
                                             
                                         
 
@@ -5714,6 +5846,17 @@
                                     </div>
                                 
                                     <div class="catch_market_order_percent">
+                                        <div class="api_key_settings phone"><strong>VITE/BTC</strong></div>
+                                        
+                                            
+                                                <input type="text" name="binance_VITE_BTC_catch_market_order_percent" maxlength="2" class="input_coin_limit field_input"  onkeypress="validate(event)" id="id_binance_VITE_BTC_catch_market_order_percent">
+                                            
+                                        
+
+                                    <div class="percent_sign"><strong>%</strong></div>
+                                    </div>
+                                
+                                    <div class="catch_market_order_percent">
                                         <div class="api_key_settings phone"><strong>WAVES/BTC</strong></div>
                                         
                                             
@@ -6039,256 +6182,32 @@
                             
                                 
                                     
-                                        <div class="text-block-7 stat_cell name_field">Биржа покупки</div>
+                                        <div class="text-block-7 stat_cell name_field last_bottom_cell">Биржа покупки</div>
                                     
                                 
                                     
-                                        <div class="text-block-7 stat_cell name_field">Валютная пара</div>
+                                        <div class="text-block-7 stat_cell name_field last_bottom_cell">Валютная пара</div>
                                     
                                 
                                     
-                                        <div class="text-block-7 stat_cell name_field">Цена покупки</div>
+                                        <div class="text-block-7 stat_cell name_field last_bottom_cell">Цена покупки</div>
                                     
                                 
                                     
-                                        <div class="text-block-7 stat_cell name_field">Количество</div>
+                                        <div class="text-block-7 stat_cell name_field last_bottom_cell">Количество</div>
                                     
                                 
                                     
-                                        <div class="text-block-7 stat_cell name_field">Сумма покупки</div>
+                                        <div class="text-block-7 stat_cell name_field last_bottom_cell">Сумма покупки</div>
                                     
                                 
                                     
-                                        <div class="text-block-7 stat_cell last_cell name_field">Процент от курса</div>
+                                        <div class="text-block-7 stat_cell last_cell name_field last_bottom_cell">Процент от курса</div>
                                     
                                 
                             
                         </div>
                         <div id="orders_data_catch_market">
-                            
-                                <div class="div-block-14 items stat">
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">Bitbay</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">BCH/BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0253664</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0002124 BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.008375 BCH</div>
-                                            
-                                    
-                                        
-                                            <div class="text-block-7 stat_cell last_cell name_field ">-10.0 %</div>
-                                            
-                                    
-                                </div>
-                            
-                                <div class="div-block-14 items stat">
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">Bitbay</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">ETH/BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0183838</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0002124 BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0115564 ETH</div>
-                                            
-                                    
-                                        
-                                            <div class="text-block-7 stat_cell last_cell name_field ">-10.0 %</div>
-                                            
-                                    
-                                </div>
-                            
-                                <div class="div-block-14 items stat">
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">Bitbay</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">XRP/BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0000269</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0002124 BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">7.8975326 XRP</div>
-                                            
-                                    
-                                        
-                                            <div class="text-block-7 stat_cell last_cell name_field ">-10.0 %</div>
-                                            
-                                    
-                                </div>
-                            
-                                <div class="div-block-14 items stat">
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">Exmo</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">BTC/USD</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">6887.2320000</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">1.2466885 USD</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.000181 BTC</div>
-                                            
-                                    
-                                        
-                                            <div class="text-block-7 stat_cell last_cell name_field ">-10.0 %</div>
-                                            
-                                    
-                                </div>
-                            
-                                <div class="div-block-14 items stat">
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">Bitstamp</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">BCH/BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0146695</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0017007 BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.1159355 BCH</div>
-                                            
-                                    
-                                        
-                                            <div class="text-block-7 stat_cell last_cell name_field ">-50.0 %</div>
-                                            
-                                    
-                                </div>
-                            
-                                <div class="div-block-14 items stat">
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">Bittrex</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">ADA/BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0000041</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0008488 BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">205.0241546 ADA</div>
-                                            
-                                    
-                                        
-                                            <div class="text-block-7 stat_cell last_cell name_field ">-20.0 %</div>
-                                            
-                                    
-                                </div>
-                            
-                                <div class="div-block-14 items stat">
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">Binance</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">ADA/BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0000036</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0010000 BTC</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">274.0 ADA</div>
-                                            
-                                    
-                                        
-                                            <div class="text-block-7 stat_cell last_cell name_field ">-30.0 %</div>
-                                            
-                                    
-                                </div>
-                            
-                                <div class="div-block-14 items stat">
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">Binance</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">ADA/ETH</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0001779</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">0.0315000 ETH</div>
-                                            
-                                    
-                                        
-                                                <div class="text-block-7 stat_cell name_field ">177.0 ADA</div>
-                                            
-                                    
-                                        
-                                            <div class="text-block-7 stat_cell last_cell name_field ">-30.0 %</div>
-                                            
-                                    
-                                </div>
                             
                         </div>
                         <div class="separator"></div>
@@ -6311,8 +6230,8 @@
 		<div id="statistics_content" class="tab_pane">
 		  <div class="stat_table exchange_block_form">
           <details>
-            <summary class="exchange exchange_name">Статистика баланса</summary>
-            <input id="statistics_exchanges_balances" type="submit" name="7UKqZQH7zTZZ4wQmjp21xa6EjKMjPXzAwVTeed2a1zg4MG7tvGcq76Xvxj7kmGZu"
+            <summary class="exchange exchange_name">Текущий баланс</summary>
+            <input id="statistics_exchanges_balances" type="submit" name="qHZRFEwCmUpDwpdxLz1cmDsIA3NO9bhJN6O8j7S2yYnQ3Q6XK9rEM13FroE2dRf0"
                                                 value="Обновить" class="submit-button-5 form_button" />
 			<div class="div-block-14 stat_line">
 			  <div class="text-block-7 stat_cell exchange_name_cell">Биржа</div>
@@ -6735,7 +6654,7 @@
               <summary class="exchange exchange_name">Изменение баланса за период</summary>
                 <div class="div-block-18">
                   <div class="form-block-2 tab_form">
-                    <form id="statistics_change_balance" method="post" class="form-3"><input type="hidden" name="csrfmiddlewaretoken" value="7UKqZQH7zTZZ4wQmjp21xa6EjKMjPXzAwVTeed2a1zg4MG7tvGcq76Xvxj7kmGZu">
+                    <form id="statistics_change_balance" method="post" class="form-3"><input type="hidden" name="csrfmiddlewaretoken" value="qHZRFEwCmUpDwpdxLz1cmDsIA3NO9bhJN6O8j7S2yYnQ3Q6XK9rEM13FroE2dRf0">
                       <div class="text-block-8 balance">с</div>
                         <input type="date" class="text-field-7 field_input" maxlength="16" name="Date_from_balance"/>
                       <div class="text-block-8 balance">по</div>
@@ -7164,7 +7083,7 @@
 		  <div class="stat_operation exchange_block_form">
             <details>
                 <summary class="exchange exchange_name">Статистика операций</summary>
-                <input id="statistics_operations" type="submit" name="7UKqZQH7zTZZ4wQmjp21xa6EjKMjPXzAwVTeed2a1zg4MG7tvGcq76Xvxj7kmGZu"
+                <input id="statistics_operations" type="submit" name="qHZRFEwCmUpDwpdxLz1cmDsIA3NO9bhJN6O8j7S2yYnQ3Q6XK9rEM13FroE2dRf0"
                                                 value="Обновить" class="submit-button-5 form_button" />
                 <div id="fields_operation_names" class="div-block-14 items stat">
                     
@@ -7224,7 +7143,7 @@
 		<div id="settings_content" class="tab_pane tab_active">
 
 		  <div class="exchanges_settings_wrap tab_form">
-			<form id="main_settings_form" method="post" class="exchanges_settings_form"><input type="hidden" name="csrfmiddlewaretoken" value="7UKqZQH7zTZZ4wQmjp21xa6EjKMjPXzAwVTeed2a1zg4MG7tvGcq76Xvxj7kmGZu">
+			<form id="main_settings_form" method="post" class="exchanges_settings_form"><input type="hidden" name="csrfmiddlewaretoken" value="qHZRFEwCmUpDwpdxLz1cmDsIA3NO9bhJN6O8j7S2yYnQ3Q6XK9rEM13FroE2dRf0">
 
                 
                     <details>
@@ -7234,13 +7153,13 @@
                           <div class="exchange_settings_api_key">
                             <div class="api_key_settings">API KEY</div>
                               
-                                <input type="password" name="kraken_API_key" maxlength="500" class="input_api_key field_input" id="id_kraken_API_key">
+                                <input type="password" name="kraken_API_key" maxlength="100" class="input_api_key field_input" id="id_kraken_API_key">
                               
                           </div>
                           <div class="exchange_settings_api_secret">
                             <div class="api_secret_settings">API SECRET</div>
                               
-                                <input type="password" name="kraken_API_secret" maxlength="500" class="input_api_secret field_input" id="id_kraken_API_secret">
+                                <input type="password" name="kraken_API_secret" maxlength="100" class="input_api_secret field_input" id="id_kraken_API_secret">
                               
                           </div>
                           
@@ -7256,13 +7175,13 @@
                           <div class="exchange_settings_api_key">
                             <div class="api_key_settings">API KEY</div>
                               
-                                <input type="password" name="bitbay_API_key" maxlength="500" class="input_api_key field_input" id="id_bitbay_API_key">
+                                <input type="password" name="bitbay_API_key" maxlength="100" class="input_api_key field_input" id="id_bitbay_API_key">
                               
                           </div>
                           <div class="exchange_settings_api_secret">
                             <div class="api_secret_settings">API SECRET</div>
                               
-                                <input type="password" name="bitbay_API_secret" maxlength="500" class="input_api_secret field_input" id="id_bitbay_API_secret">
+                                <input type="password" name="bitbay_API_secret" maxlength="100" class="input_api_secret field_input" id="id_bitbay_API_secret">
                               
                           </div>
                           
@@ -7278,13 +7197,13 @@
                           <div class="exchange_settings_api_key">
                             <div class="api_key_settings">API KEY</div>
                               
-                                <input type="password" name="exmo_API_key" maxlength="500" class="input_api_key field_input" id="id_exmo_API_key">
+                                <input type="password" name="exmo_API_key" maxlength="100" class="input_api_key field_input" id="id_exmo_API_key">
                               
                           </div>
                           <div class="exchange_settings_api_secret">
                             <div class="api_secret_settings">API SECRET</div>
                               
-                                <input type="password" name="exmo_API_secret" maxlength="500" class="input_api_secret field_input" id="id_exmo_API_secret">
+                                <input type="password" name="exmo_API_secret" maxlength="100" class="input_api_secret field_input" id="id_exmo_API_secret">
                               
                           </div>
                           
@@ -7300,19 +7219,19 @@
                           <div class="exchange_settings_api_key">
                             <div class="api_key_settings">API KEY</div>
                               
-                                <input type="password" name="bitstamp_API_key" maxlength="500" class="input_api_key field_input" id="id_bitstamp_API_key">
+                                <input type="password" name="bitstamp_API_key" maxlength="100" class="input_api_key field_input" id="id_bitstamp_API_key">
                               
                           </div>
                           <div class="exchange_settings_api_secret">
                             <div class="api_secret_settings">API SECRET</div>
                               
-                                <input type="password" name="bitstamp_API_secret" maxlength="500" class="input_api_secret field_input" id="id_bitstamp_API_secret">
+                                <input type="password" name="bitstamp_API_secret" maxlength="100" class="input_api_secret field_input" id="id_bitstamp_API_secret">
                               
                           </div>
                           
                             <div class="exchange_settings_api_secret">
                                 <div class="api_secret_settings">UID</div>
-                                <input type="password" name="bitstamp_uid" maxlength="200" class="input_api_secret field_input" id="id_bitstamp_uid">
+                                <input type="password" name="bitstamp_uid" maxlength="100" class="input_api_secret field_input" id="id_bitstamp_uid">
                             </div>
                           
 
@@ -7327,19 +7246,19 @@
                           <div class="exchange_settings_api_key">
                             <div class="api_key_settings">API KEY</div>
                               
-                                <input type="password" name="okcoin_API_key" maxlength="500" class="input_api_key field_input" id="id_okcoin_API_key">
+                                <input type="password" name="okcoin_API_key" maxlength="100" class="input_api_key field_input" id="id_okcoin_API_key">
                               
                           </div>
                           <div class="exchange_settings_api_secret">
                             <div class="api_secret_settings">API SECRET</div>
                               
-                                <input type="password" name="okcoin_API_secret" maxlength="500" class="input_api_secret field_input" id="id_okcoin_API_secret">
+                                <input type="password" name="okcoin_API_secret" maxlength="100" class="input_api_secret field_input" id="id_okcoin_API_secret">
                               
                           </div>
                           
                               <div class="exchange_settings_api_secret">
                                 <div class="api_secret_settings">PASSPHRASE</div>
-                                <input type="password" name="okcoin_passphrase" maxlength="200" class="input_api_secret field_input" id="id_okcoin_passphrase">
+                                <input type="password" name="okcoin_passphrase" maxlength="100" class="input_api_secret field_input" id="id_okcoin_passphrase">
                               </div>
                           
 
@@ -7354,13 +7273,13 @@
                           <div class="exchange_settings_api_key">
                             <div class="api_key_settings">API KEY</div>
                               
-                                <input type="password" name="bittrex_API_key" maxlength="500" class="input_api_key field_input" id="id_bittrex_API_key">
+                                <input type="password" name="bittrex_API_key" maxlength="100" class="input_api_key field_input" id="id_bittrex_API_key">
                               
                           </div>
                           <div class="exchange_settings_api_secret">
                             <div class="api_secret_settings">API SECRET</div>
                               
-                                <input type="password" name="bittrex_API_secret" maxlength="500" class="input_api_secret field_input" id="id_bittrex_API_secret">
+                                <input type="password" name="bittrex_API_secret" maxlength="100" class="input_api_secret field_input" id="id_bittrex_API_secret">
                               
                           </div>
                           
@@ -7376,13 +7295,13 @@
                           <div class="exchange_settings_api_key">
                             <div class="api_key_settings">API KEY</div>
                               
-                                <input type="password" name="binance_API_key" maxlength="500" class="input_api_key field_input" id="id_binance_API_key">
+                                <input type="password" name="binance_API_key" maxlength="100" class="input_api_key field_input" id="id_binance_API_key">
                               
                           </div>
                           <div class="exchange_settings_api_secret">
                             <div class="api_secret_settings">API SECRET</div>
                               
-                                <input type="password" name="binance_API_secret" maxlength="500" class="input_api_secret field_input" id="id_binance_API_secret">
+                                <input type="password" name="binance_API_secret" maxlength="100" class="input_api_secret field_input" id="id_binance_API_secret">
                               
                           </div>
                           
@@ -7398,13 +7317,13 @@
                           <div class="exchange_settings_api_key">
                             <div class="api_key_settings">API KEY</div>
                               
-                                <input type="password" name="dsx_API_key" maxlength="500" class="input_api_key field_input" id="id_dsx_API_key">
+                                <input type="password" name="dsx_API_key" maxlength="100" class="input_api_key field_input" id="id_dsx_API_key">
                               
                           </div>
                           <div class="exchange_settings_api_secret">
                             <div class="api_secret_settings">API SECRET</div>
                               
-                                <input type="password" name="dsx_API_secret" maxlength="500" class="input_api_secret field_input" id="id_dsx_API_secret">
+                                <input type="password" name="dsx_API_secret" maxlength="100" class="input_api_secret field_input" id="id_dsx_API_secret">
                               
                           </div>
                           
@@ -7416,7 +7335,7 @@
 
 			  <div class="email_settings">
                   <label for="name-2" class="enter_email">Почта для отправки уведомлений:</label>
-                  <input type="text" name="user_email" value="forlechat@gmail.com" maxlength="200" class="input_email_settings field_input" id="id_user_email">
+                  <input type="text" name="user_email" maxlength="100" class="input_email_settings field_input" id="id_user_email">
               </div>
               <details class="change_pass">
                 <summary class="pass_settings">Задать новый пароль</summary>
@@ -7440,7 +7359,8 @@
 	  </div>
 	</div>
   </header>
-  <script src="./static/js/script.js" type="text/javascript"></script>
+
+  <script src="static/js/script.js" type="text/javascript"></script>
 </body>
 
 </html>

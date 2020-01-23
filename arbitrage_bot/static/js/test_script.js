@@ -1,3 +1,4 @@
+
 // Login page
 (function ($) {
     // [ Show pass ]
@@ -120,61 +121,27 @@ function clearDataForm(obj) {
 }
 // =====================================================================================================================
 
-// Only save data from the arbitrage form by Ajax
-$('#arbitrage_save_changes').click(function(){
-    var arbitrage_btn = $('#arbitrage_btn');
-    var arbitrage_save_changes = $('#arbitrage_save_changes');
-    var start_stop_or_save_arbitrage = $('#start_stop_or_save_arbitrage');
-    var arbitrage_form = $('#arbitrage_form');
-    start_stop_or_save_arbitrage.prop('name', 'arbitrage_settings');
+// (TEST) Only save data from the arbitrage form by Ajax
+$('#test_arbitrage_save_changes').click(function(){
+    var test_arbitrage_btn = $('#test_arbitrage_btn');
+    var test_arbitrage_save_changes = $('#test_arbitrage_save_changes');
+    var test_start_stop_or_save_arbitrage = $('#test_start_stop_or_save_arbitrage');
+    var test_arbitrage_form = $('#test_arbitrage_form');
+    test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_settings');
     $.ajax({ // create an AJAX call...
-        this: arbitrage_form,
-        // data: arbitrage_form.serialize(), // get the form data
-        data: clearDataForm(arbitrage_form), // get and clear the form data
-        type: arbitrage_form.attr('method'), // GET or POST
+        this: test_arbitrage_form,
+        data: clearDataForm(test_arbitrage_form), // get and clear the form data
+        type: test_arbitrage_form.attr('method'), // GET or POST
         success: function (data) {
-            arbitrage_save_changes.prop('value', 'Изменения сохранены!').addClass(' background_teal');
+            test_arbitrage_save_changes.prop('value', 'Изменения сохранены!').addClass(' test_background_teal');
             function return_old_value() {
-                arbitrage_save_changes.prop('value', 'Сохранить изменения').removeClass(' background_teal')
+                test_arbitrage_save_changes.prop('value', 'Сохранить изменения').removeClass(' test_background_teal')
             }
             setTimeout(return_old_value, 1500);
-            if (arbitrage_btn.attr('name') === 'arbitrage_start_bot') {
-                start_stop_or_save_arbitrage.prop('name', 'arbitrage_start_bot');
+            if (test_arbitrage_btn.attr('name') === 'test_arbitrage_start_bot') {
+                test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_start_bot');
             } else {
-                start_stop_or_save_arbitrage.prop('name', 'arbitrage_stop_bot');
-            }
-        }
-    });
-    return false;
-});
-
-
-
-// Save data from the arbitrage form by Ajax and start arbitrage bot
-$('#arbitrage_btn').click(function(){
-    var arbitrage_btn = $('#arbitrage_btn');
-    var start_stop_or_save_arbitrage = $('#start_stop_or_save_arbitrage');
-    var arbitrage_form = $('#arbitrage_form');
-    arbitrage_btn.prop('value', 'Обрабатывается...').addClass(' background_teal');
-    $.ajax({ // create an AJAX call...
-        this: arbitrage_form,
-        // data: arbitrage_form.serialize(), // get the form data
-        data: clearDataForm(arbitrage_form), // get and clear the form data
-        type: arbitrage_form.attr('method'), // GET or POST
-        success: function (response) {
-            if ( response.arbitrage_bot_running ) {
-                arbitrage_btn.prop('name', 'arbitrage_stop_bot')
-                    .prop('value', 'Остановить робота')
-                    .removeClass(' background_teal')
-                    .addClass(' background_red');
-                start_stop_or_save_arbitrage.prop('name', 'arbitrage_stop_bot');
-            }
-            else {
-                arbitrage_btn.prop('name', 'arbitrage_start_bot')
-                    .prop('value', 'Запустить робота')
-                    .removeClass(' background_teal')
-                    .removeClass(' background_red');
-                start_stop_or_save_arbitrage.prop('name', 'arbitrage_start_bot');
+                test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_stop_bot');
             }
         }
     });
@@ -187,32 +154,31 @@ $('#arbitrage_btn').click(function(){
 $('#test_arbitrage_btn').click(function(){
     var test_arbitrage_btn = $('#test_arbitrage_btn');
     var test_start_stop_or_save_arbitrage = $('#test_start_stop_or_save_arbitrage');
-    var arbitrage_form = $('#arbitrage_form');
-    test_arbitrage_btn.prop('value', 'Обрабатывается...').addClass(' background_teal');
+    var test_arbitrage_form = $('#test_arbitrage_form');
+    test_arbitrage_btn.prop('value', 'Обрабатывается...').addClass(' test_background_teal');
     $.ajax({ // create an AJAX call...
-        this: arbitrage_form,
-        data: clearDataForm(arbitrage_form), // get and clear the form data
-        type: arbitrage_form.attr('method'), // GET or POST
+        this: test_arbitrage_form,
+        data: clearDataForm(test_arbitrage_form), // get and clear the form data
+        type: test_arbitrage_form.attr('method'), // GET or POST
         success: function (response) {
             if ( response.test_arbitrage_bot_running ) {
                 test_arbitrage_btn.prop('name', 'test_arbitrage_stop_bot')
                     .prop('value', 'Остановить робота')
-                    .removeClass(' background_teal')
-                    .addClass(' background_red');
+                    .removeClass(' test_background_teal')
+                    .addClass(' test_background_red');
                 test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_stop_bot');
             }
             else {
                 test_arbitrage_btn.prop('name', 'test_arbitrage_start_bot')
                     .prop('value', 'Запустить робота')
-                    .removeClass(' background_teal')
-                    .removeClass(' background_red');
+                    .removeClass(' test_background_teal')
+                    .removeClass(' test_background_red');
                 test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_start_bot');
             }
         }
     });
     return false;
 });
-
 
 
 // Save data from the catch_market form by Ajax
@@ -511,89 +477,7 @@ $('#statistics_operations').click(function(){
 });
 
 
-// (function data_updater() {
-//     var arbitrage_btn = $('#arbitrage_btn');
-//     var start_stop_or_save_arbitrage = $('#start_stop_or_save_arbitrage');
-//     var test_arbitrage_btn = $('#test_arbitrage_btn');
-//     var test_start_stop_or_save_arbitrage = $('#test_start_stop_or_save_arbitrage');
-//     $.ajax({url: '/data_update/',
-//     type: 'GET',
-//     success: function(data) {
-//         if ( data.arbitrage_bot_running == true ) {
-//                 // alert(data.is_LB_Bot_running);
-//                 arbitrage_btn.prop('name', 'arbitrage_stop_bot')
-//                     .prop('value', 'Остановить робота')
-//                     .removeClass(' background_teal')
-//                     .addClass(' background_red');
-//                 start_stop_or_save_arbitrage.prop('name', 'arbitrage_stop_bot');
-//         }
-//         else {
-//             if ( data.arbitrage_bot_running == false ) {
-//                 arbitrage_btn.prop('name', 'arbitrage_start_bot')
-//                     .prop('value', 'Запустить робота')
-//                     .removeClass(' background_teal')
-//                     .removeClass(' background_red');
-//                 start_stop_or_save_arbitrage.prop('name', 'arbitrage_start_bot');
-//             }
-//         }
-//         if ( data.test_arbitrage_bot_running == true ) {
-//                 test_arbitrage_btn.prop('name', 'test_arbitrage_stop_bot')
-//                     .prop('value', 'Остановить робота')
-//                     .removeClass(' background_teal')
-//                     .addClass(' background_red');
-//                 test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_stop_bot');
-//             }
-//         else {
-//             if ( data.test_arbitrage_bot_running == false ) {
-//                 test_arbitrage_btn.prop('name', 'test_arbitrage_start_bot')
-//                 .prop('value', 'Запустить робота')
-//                 .removeClass(' background_teal')
-//                 .removeClass(' background_red');
-//                 test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_start_bot');
-//             }
-//
-//         }
-//     },
-//     complete: function() {
-//         // Schedule the next request when the current one's complete
-//         setTimeout(data_updater, 5000);
-//     }
-//     });
-// })();
-
-
 // // Change the button when Arbitrage bot is running
-// $(window).on('load', function () {
-//     var btn = $('#statistics_operations');
-//     $.ajax(
-//         {
-//             data: {
-//             'csrfmiddlewaretoken': btn.attr('name')
-//             },
-//             url: "/",
-//             type: "GET",
-//             success: function(result){
-//         // alert(result.is_arbitrage_running);
-//         var arbitrage_btn = $('#arbitrage_btn');
-//         if ( result.is_arbitrage_running) {
-//             arbitrage_btn.prop('name', 'arbitrage_stop_bot')
-//                         .prop('value', 'Остановить робота')
-//                         .removeClass(' background_teal')
-//                         .addClass(' background_red');
-//                     start_stop_or_save_arbitrage.prop('name', 'arbitrage_stop_bot');
-//         }
-//         else {
-//                 arbitrage_btn.prop('name', 'arbitrage_start_bot')
-//                     .prop('value', 'Запустить робота')
-//                     .removeClass(' background_teal')
-//                     .removeClass(' background_red');
-//                 start_stop_or_save_arbitrage.prop('name', 'arbitrage_start_bot');
-//             }
-//     }});
-// });
-//
-//
-// // (TEST) Change the button when Arbitrage bot is running
 // $(window).on('load', function () {
 //     var btn = $('#statistics_operations');
 //     $.ajax(
@@ -606,12 +490,45 @@ $('#statistics_operations').click(function(){
 //             success: function(result){
 //         // alert(result.is_arbitrage_running);
 //         if ( result.is_arbitrage_running ) {
-//             var test_arbitrage_btn = $('#test_arbitrage_btn');
-//             test_arbitrage_btn.prop('name', 'arbitrage_stop_bot')
+//             var arbitrage_btn = $('#arbitrage_btn');
+//             arbitrage_btn.prop('name', 'arbitrage_stop_bot')
 //                         .prop('value', 'Остановить робота')
 //                         .removeClass(' background_teal')
 //                         .addClass(' background_red');
 //                     start_stop_or_save_arbitrage.prop('name', 'arbitrage_stop_bot');
+//         }
+//     }});
+// });
+//
+//
+
+
+// // (TEST) Change the button when Arbitrage bot is running
+// $(window).on('load', function () {
+//     var btn = $('#statistics_operations');
+//     $.ajax(
+//         {
+//             data: {
+//             'csrfmiddlewaretoken': btn.attr('name')
+//             },
+//             url: "/",
+//             type: "POST",
+//             success: function(result){
+//         alert(result.test_is_arbitrage_running);
+//         var test_arbitrage_btn = $('#test_arbitrage_btn');
+//         if ( result.test_is_arbitrage_running === 'true') {
+//             test_arbitrage_btn.prop('name', 'test_arbitrage_stop_bot')
+//                         .prop('value', 'Остановить робота')
+//                         .removeClass(' test_background_teal')
+//                         .addClass(' test_background_red');
+//                     test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_stop_bot');
+//         }
+//         else {
+//             test_arbitrage_btn.prop('name', 'test_arbitrage_start_bot')
+//                 .prop('value', 'Запустить робота')
+//                 .removeClass(' test_background_teal')
+//                 .removeClass(' test_background_red');
+//             test_start_stop_or_save_arbitrage.prop('name', 'test_arbitrage_start_bot');
 //         }
 //     }});
 // });
