@@ -1,4 +1,4 @@
-/* Generated on: Mon Mar 16 2020 13:21:05 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Fri Mar 20 2020 12:27:57 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -305,10 +305,6 @@ html.w-mod-touch * {
 	display: inline-block
 }
 
-.div-block-5 input {
-border: 1px solid rgba(26, 143, 247, 0.4);
-}
-
 .w-clearfix:before,
 .w-clearfix:after {
 	content: " ";
@@ -605,7 +601,7 @@ label {
 	color: #333333;
 	vertical-align: middle;
 	background-color: #ffffff;
-	border: none
+	border: none;
 }
 
 .w-input:-moz-placeholder,
@@ -2347,7 +2343,7 @@ textarea.w-select {
 	display: -ms-flexbox;
 	display: flex;
 	overflow: visible;
-	width: 14.2857%;
+	width: 10%;
 	height: 100%;
 	min-height: 30px;
 	margin-bottom: 0px;
@@ -2370,6 +2366,7 @@ textarea.w-select {
 	border-right: 1px solid rgba(26, 143, 247, 0.4);
 	border-radius: 0px;
 	background-color: transparent;
+	font-size: 14px;
 	font-style: normal;
 	text-align: center;
 	text-decoration: none;
@@ -2384,54 +2381,11 @@ textarea.w-select {
 	text-align: center;
 }
 
-.button-3 {
-	width: 150px;
-	margin-right: 20px;
-	margin-left: 20px;
-	background-color: red;
-	text-align: center;
-}
-
-.select-field {
-	width: 100%;
-	height: 100%;
-	margin-bottom: 0px;
-	padding: 0px 2px;
-}
-
-.select-field.text-block {
-	display: block;
-	width: 11.111111111%;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-webkit-flex-direction: row;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	border-style: none solid none none;
-	border-width: 1px;
-	border-color: #000 rgba(26, 143, 247, 0.4) #000 #000;
-	line-height: 40px;
-}
-
 .form-block {
 	max-width: 1000px;
 	margin-top: 20px;
 	margin-right: auto;
 	margin-left: auto;
-}
-
-.field-label-2 {
-	margin-top: 10px;
-	font-size: 16px;
-	text-align: center;
 }
 
 .div-block {
@@ -2493,17 +2447,13 @@ textarea.w-select {
 	border-bottom-style: solid;
 }
 
+.div-block.mob.title.labelline {
+	height: 60px;
+}
+
 .div-block-2 {
 	margin-bottom: 0px;
 	padding: 10px;
-}
-
-.submit-button {
-	display: block;
-	width: 160px;
-	margin-top: 20px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 .field-label {
@@ -2543,7 +2493,7 @@ textarea.w-select {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	width: 14.2857%;
+	width: 10%;
 	height: 100%;
 	min-height: 30px;
 	margin-bottom: 0px;
@@ -2572,7 +2522,7 @@ textarea.w-select {
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
-	width: 14.2857%;
+	width: 10%;
 	height: 100%;
 	min-height: 30px;
 	margin-bottom: 0px;
@@ -2591,6 +2541,20 @@ textarea.w-select {
 	border-right: 1px solid rgba(26, 143, 247, 0.4);
 }
 
+.section {
+	font-size: 14px;
+}
+
+
+
+
+.div-block-5 input {
+	border: 1px solid rgba(26, 143, 247, 0.4);
+}
+
+
+
+
 @media screen and (max-width: 991px) {
 	.text-block {
 		min-width: 122px;
@@ -2600,10 +2564,6 @@ textarea.w-select {
 @media screen and (max-width: 767px) {
 	.text-field {
 		width: 77%;
-	}
-
-	.select-field {
-		margin-left: auto;
 	}
 
 	.div-block {
@@ -2632,16 +2592,6 @@ textarea.w-select {
 	.button-2 {
 		width: 150px;
 		margin-bottom: 10px;
-	}
-
-	.select-field {
-		width: 176px;
-		height: 30px;
-		margin-left: 0px;
-	}
-
-	.field-label-2 {
-		width: 100%;
 	}
 
 	.div-block {
